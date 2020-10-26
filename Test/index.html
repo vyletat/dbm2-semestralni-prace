@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- AlaSQL -->
+    <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<script>
+    alasql("CREATE TABLE cities (city string, population number)");
+    alasql("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
+    var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
+    console.table(res);
+
+    alasql("CREATE TABLE test (language INT, hello STRING)");
+    alasql("INSERT INTO test VALUES (1,'Hello!')");
+    alasql("INSERT INTO test VALUES (2,'Aloha!')");
+    alasql("INSERT INTO test VALUES (3,'Bonjour!')");
+    console.table(alasql("SELECT * FROM test WHERE language > 1"));
+
+    var data = [{a: 1, b: 1, c: 1}, {a: 1, b: 2, c: 1}, {a: 1, b: 3, c: 1}, {a: 2, b: 1, c: 1}];
+    console.table(data);
+    var res2 = alasql('SELECT a, COUNT(*) AS b FROM ? GROUP BY a', [data]);
+    console.table(res2);
+
+    // res now contains this array of object:
+    // [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}]
+</script>
+
+<div class="container">
+    <h1>Knihovna AlaSQL</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <h2>JSON</h2>
+        </div>
+        <div class="col-6">
+            <h2>Query</h2>
+            <h2>Result</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>

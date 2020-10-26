@@ -1,1 +1,18 @@
 \babel@toc {czech}{}
+\contentsline {section}{\numberline {1}Instalace}{3}{section.1}%
+\contentsline {section}{\numberline {2}Použití}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Funkcí}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Nová databáze}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Compile section}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Synchronní/Asynchronní přístup}{4}{section.3}%
+\contentsline {section}{\numberline {4}Import/Export dat}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Textový soubor}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}CSV}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}TAB}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}XLS}{4}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}HTML}{4}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Čtení z tabulky}{4}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Zápis do tabulky}{4}{subsubsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.6}JSON}{4}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Založení tabulky}{4}{subsection.4.7}%
+\contentsline {section}{\numberline {5}SQL dotazy}{4}{section.5}%
