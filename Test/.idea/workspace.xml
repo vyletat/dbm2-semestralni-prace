@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36c6d6a1-703c-444e-8652-6214be22a0b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/example.js" afterDir="false" />
-    </list>
+    <list default="true" id="36c6d6a1-703c-444e-8652-6214be22a0b1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Příklady" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603718072693</updated>
       <workItem from="1603718074147" duration="2567000" />
+      <workItem from="1603755516100" duration="80000" />
     </task>
     <servers />
   </component>
@@ -63,7 +61,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
