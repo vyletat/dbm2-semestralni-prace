@@ -78,6 +78,10 @@ alasql('SELECT * INTO HTML("#sampleTable", {headers:true}) FROM cisla');
 
 myDatabase2.exec('SELECT * INTO HTML("#cities", {headers:true}) FROM cities');
 
+var data = [{a:{b:1,c:1}},{a:{b:2}},{a:{b:4}}];
+var res = alasql('SELECT a->b FROM ?',[data]);
+console.log(res);
+
 //Custom SQL functions
 alasql.fn.myFunction = function (population) {
   return (population / 1000);
