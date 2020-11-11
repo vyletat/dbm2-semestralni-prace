@@ -12,7 +12,7 @@
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=cyan,
+    urlcolor=yellow,
 }
 \usepackage{listings}
 
@@ -29,8 +29,6 @@
 \newpage
 
 \section*{Úvod}
-
-\subsection*{Problém}
 Problémem či zadáním semestrální práce je nalézt a popsat knihovnu pro zpracování množiny souborů ve formátu JSON, které většinou vrací endpointy REST API. Využít ji na úrovni jednoho programu (bez nutnosti vkládání dat do jiných SŘBD pro zpracování objektových souborů). Knihovna by měla být schopna poskytovat funkce obsažené v jazyce SQL jako FROM, GROUP BY, JOIN, atd. Cíle práce jsou: 
 
 \begin{itemize}
@@ -39,7 +37,8 @@ Problémem či zadáním semestrální práce je nalézt a popsat knihovnu pro z
 	\item Analyzujte možnosti jazyka/nástroje v kontrastu s klasickou relační databází resp. SQL.
 \end{itemize}
 
-\subsection*{Knihovna AlaSQL}
+
+\section{Knihovna AlaSQL}
 AlaSQL (čti à la SQL)je \textit{open source} SQL databáze pro JavaScript, operující na straně klienta. Implementuje mnoho funkcí ze čtvrté verze jazyka SQL (SQL:1999) a také některé funkce navíc pro snažší manipulaci s NoSQL a grafovými sítěmi. Také podporuje asynchronní volání pomocí metody promise. Knihovnu lze využít pro webové aplikace, aplikace založené na Node.js nebo v mobilních aplikacích.
 
 Podporuje import/export formátů, jako jsou např. tabulky programu Excel (.xls), CSV - Comma-separated values (.csv), již zmiňovaný JSON - JavaScript Object Notation (.json), TAB - Tab Separated Data File (.tab), IndexedDB, LocalStorage a SQLite.
@@ -58,7 +57,7 @@ Užitečné odkazy:
 
 
 \section{Instalace}
-Knihovna je dostupná v několika JavaScriptových správcích balíčků (package management) kterými jsou npm, Bover, Meteor nebo si ji můžete přímo naklonovat/stáhnout z officiálního GitHub repozitáře. 
+Knihovna je dostupná v několika JavaScriptových správcích balíčků (package management) kterými jsou npm, Bover a Meteor nebo si ji můžete přímo naklonovat/stáhnout z officiálního GitHub repozitáře. 
 
 Pokud nechcete stahovat knihovnu na fyzické úložiště, nejjednodušší varianta je získat AlaSQL do své aplikace pomocí cloudové služby \href{https://cdnjs.com/libraries/alasql}{cdnjs.com}, která je založena na principu CDN (Content Delivery Network). Stačí tedy do našeho projektu vložit odkaz na tuto knihovnu, např. do hlavičky HTML souboru:
 
@@ -68,11 +67,20 @@ Pokud nechcete stahovat knihovnu na fyzické úložiště, nejjednodušší vari
 
 
 \section{Použití}
-Po úspěšném nainstalovaní/naimportování knihovny jsme schopni ji začít používat. Nyní je několik možností jak pracovat s databází.
+Po úspěšném nainstalovaní/naimportování knihovny jsme schopni ji začít používat. Nyní je několik možností jak pracovat s databází. 
+
+AlaSQL je rozšířitelná a umožňuje nám vytvářet vlastní funkce s použitím JavaScriptu.
+- lenght v array
+\begin{lstlisting}
+alasql.aggr.CONCAT = function(v,s) {
+    return (s||[]).concat(v);
+};
+\end{lstlisting}
 
 \subsection{Funkcí}
 Všechny dotazy (queries) se vkládají jako atribut metody \textit{alasql(stringWithSQL)} nebo jiné proměnné, pokud si je nazvete, třeba v Node.js.
 
+\subsubsection{NodeJS}
 \begin{lstlisting}
 var alasql = require('alasql');
 alasql('CREATE TABLE one (two INT)');
@@ -88,24 +96,72 @@ mybase.exec('CREATE TABLE one (two INT)');
 
 Funkce \textit{alasql()} je zkrácenou verzí \textit{alasql.exec()}.
 
-Také k ním můžete přistupovat přes globální objekt \textit{alasql}.
+Také k ním můžete přistupovat přes globální objekt \textit{alasql}. Obecně se všechny databáze nacházejí v alasql.databases.[název databáze].
 
 \begin{lstlisting}
 var mybase = new alasql.Database('mybase');
 console.log(alasql.databases.mybase);
 \end{lstlisting}
 
-\subsection{Compile section}
+\subsection{Nová tabulka}
+Založení nové tabulky je podobné, můžeme ji vytvořit přímo v globálním objektu alasql nebo vytvořit k nějaké databázi. Budu předpokládat, že máme databázi uloženou v proměnné \textit{var mybase}. Založení tabulky je pak následující:
+
+\begin{lstlisting}
+mybase.exec("CREATE TABLE cities (city string, population number)");
+console.log(alasql.databases.mybase.tables.cities);
+console.log(mybase.exec("SELECT * FROM cities"));
+\end{lstlisting}
+
+Jak můžete vidět, výpis celé tabulky může být uskutečněn opět přes objekt alasql.databases.[název databáze].tables.[název tabulky] nebo jako SQL dotaz nad databází.
+
+\subsection{Manipulace dat v tabulce}
+Jako jsme zvyklí z SQL, data jsou provádět různé úkony, jako je INSERT, UPDATE, DELETE. Syntaxe je stejná jako při založení nové tabulky. Akorát se změní dotaz. Jako příklad mohu uvést:
+
+\begin{lstlisting}
+mybase.exec("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
+\end{lstlisting}
+
+\subsubsection*{INSERT jako JS funkce}
+V úvodu jsem zmínil že jde vytvářet vlastní metody a jedna z možností je je přes funkci compile() knihovny. Která umožňuje překompilovat příkazy a přidá je do cache dané databáze.
+
+\begin{lstlisting}
+var insert1 = db.compile('INSERT INTO one (?,?)');
+var insert2 = db.compile('INSERT INTO one (:a,:b)');
+
+insert1([1,2]);
+insert2({a:3,b:4});
+\end{lstlisting}
+
+\subsubsection*{Přidělení dat jako JS objekt}
+Určitě vás napadlo, že jako přistupujeme k databázím a tabulkám přes globální objekt, proč by nešlo přistupovat i k datům tabulky a opravdu to jde. Obecně se všechna data tabulky nacházejí v alasql.databases.[název databáze].tables.[název tabulky].data. Příklad na přidělení dat může být následující:
+
+\begin{lstlisting}
+const ceskaMesta = [
+    {name: 'Prague', population: 1324277},
+    {name: 'Brno', population: 381346},
+    {name: 'Ostrava', population: 287968},
+    {name: 'Plzen', population: 174842}
+];
+alasql.databases.mybase.tables.cities.data = ceskaMesta;
+\end{lstlisting}
+
+Je zde ale riziko, přidělená data neprochází přes žádnou funkci, tudíž data vůbec nemusejí odpovídat schématu tabulky, při přidělení dat žádná vyjímka nevyhodí, ale pokud by jsme nad daty zavolali nějaký dotaz, vyskočila by podmínka nebo by data byly \textit{undefiend}. 
 
 
 \section{Synchronní/Asynchronní přístup}
 Za normálního běhu knihovna vykonává procesy synchronně, ale jdou také volat callbacky nebo asynchronní volání pomocí metody \textit{promise()}. Pokud pracujete se soubory, načítáte je, pak knihovna funguje asynchronně a je doporučeno používat již zmíněnou metodu \textit{promise()}.
 
+\begin{lstlisting}
+alasql('SELECT * FROM cities', [],        // callback
+    function (res) {
+        console.log(res);
+    }
+);
+\end{lstlisting}
+
+
 \section{Import/Export dat}
-\subsection{Textový soubor}
-\subsection{CSV}
-\subsection{TAB}
-\subsection{XLS}
+Zmíním jen zajímavé funkce, které mi přišli relevantní, ostatní jen zmíním, že existují.
 
 \subsection{HTML}
 Knihovna dokáže číst data z HTML tabulky <table>...</table> a výsledek opět vygenerovat do HTML tabulky.
@@ -119,15 +175,95 @@ alasql('SELECT * FROM HTML("#MyTable", {headers:true})');
 alasql('SELECT * INTO HTML("#MyTable", {headers:true}) FROM ?',[data]);
 \end{lstlisting}
 
+\subsection{Ostatní}
+Ostatní import/export funkce jsou z/do souborů typu Textový soubor, CSVm TAB a XLS.
+
 \subsection{JSON}
-
-
-\subsection{Založení tabulky}
-
+Hlavní náplň této knihovny.
 
 \section{SQL dotazy}
+Knihovna podporuje všechny základní funkce SQL jazyka, jako jsou funkce JOIN. GROUP, UNION, ANY, ALL, IN, podotazy a také okleštěnou správu transakcí. Dále také knihovna podporuje agregační data mining??? funkce, kterými jsou ROLLUP, CUBE a GROUPING SETS.
+
+\subsection{Nejlépe funguje s JS}
+Tato knihovna je v podstatě SQL databáze v JavaScriptu. Slouží zejména jako podpora zpracování, usnadnění délky kódu, lepší práci s daty nebo jako samostatná databáze - nejlépe však funguje SPOLEČNĚ s JavaScriptem. Knihovna nevrací rovnou tabulky, jak je běžné u relačních databází, ale defaultně vrací data právě jako JSON a další práce s ním je už jako práce s objektem.
+
+\begin{lstlisting}
+// vypis poctu objektu ve vracenem poli
+var db = new alasql.Database();
+db.exec('select * from one', function(data) { 		// callback
+   console.log(data.length);						
+});
+
+// novy datovy typ
+alasql.fn.Date = Date;
+    alasql('CREATE order (orderno INT, orderdate Date)');
+\end{lstlisting}
+
+\section{Datasety}
+\subsection{Rohlík.cz}
+K dispozici máme data z webového portálu Rohlik.cz, který se zaměřuje na obchod s potravinami. Data obsahují dva soubory ze dne 2.11.2020, jeden z pohledu obyčejného uživatele (\textit{rohlik2.json}) a druhý z pohledu prémiového uživatel (\textit{rohlik1.json})e, hlavní rozdíl mezi těmito dvěma datasety je v ceně za dopravu. Nejvíce nás zajímá atribut \textit{availabilityDays}, který se sestává ze čtyř dalších objektů, popisující dnešek a další tři dny. V nich nalezneme atribut \textit{slots}, ve kterém jsou objekty popisující hodiny daný den. V dané hodině nás zajímá atribut \textit{timeSlotCapacityDTO}, který obsahuje konečný atribut \textit{totalFreeCapacityPercent} popisující obsazenost danou hodinu. O úroveň víš je pak atribut \textit{price} značící cenu dovozu.
+
+\subsection{Starcraft}
 
 
+\section{Důležitá je cesta, ne cíl}
+
+\subsection{Rohlík.cz}
+\subsubsection{Jaké je nejbližší okno s volnou kapacitou?}
+\subsubsection{Kolik volných časových intervalů je k dispozici?}
+\subsubsection{Jaké je nejbližší nejlevnější okno s volnou kapacitou?}
+
+\subsection{Starcraft}
+\subsubsection{Kolik hráčů je v jednotlivých divizích/úrovních?}
+\subsubsection{Jsou konzistentní počty hráčů mezi JSON typ A a B?}
+
+\subsubsection{Seřazení hráčů v rámci jednoho ladderu.}
+S touto otázkou si knihovna poradí celkem snadno, pokud chceme seřadit hráče v jedno ladderu a známe ID tohoto ladderu. S přiloženými daty si například vezmeme soubor \textit{ladders-eu-230898.json}, což je ladder s ladderId=230898 a pomocí JS můžeme přistupovat k jeho atributům. Všechny hráči daného ladderu jsou uložené v atributu \textit{team}. Vytvoříme si AlaSQL dotaz:
+\begin{lstlisting}
+alasql('SELECT * FROM ? ORDER BY rating DESC', [ladder230898.team])
+\end{lstlisting}
+Vybereme všechny atributy a pomocí Funkce ORDER BY je můžeme seřadit sestupně nebo vzestupně.
+
+\subsubsection{Jací hráči vybočují z hranic divizí?}
+\subsubsection{Kolik hráčů odehrálo v poslední době nějakou hru?}
+\subsubsection{Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy?}
+\subsubsection{Jací hráči přibyli/ubyli v daných ladderech?}
+\subsubsection{Kolik zástupců mají týmy v jednotlivých úrovních?}
+
+
+\subsection{Objevené zajímavé funkce}
+\subsubsection*{Placeholder}
+The question mark is a placeholder. The queries all start off with ‘alasql’ followed by parens containing a string and an optional array containing placeholders.
+
+\subsubsection*{AST}
+Umožňuje převádět jazyk SQL na AST (Abstract Syntax Tree), který můžeme programově interpretovat do našeho datového modelu.
+\begin{lstlisting}
+var ast = alasql.parse("SELECT * FROM one");
+console.log(ast.toString()); 		// Vypise puvodni SQL dotaz
+\end{lstlisting}
+Tato funkce se může použít různě, například pro rychlejší sestavování větších dotazů.
+
+\subsubsection*{pretty(sql)}
+Interně, pokud se ve svých dotazech vyznáme, je tato funkce asi zbytečná, ale je dobrá ji mít při vypisování, speciálně dlouhých, dotazů do konzole nebo kamkoliv jinam. Funkce totiž zkrášlí náš stringový dotaz.
+
+\subsubsection*{}
+Místo funkcí \textit{alasql()} nebo \textit{exec()} můžete využít také jednu z následujících funkcí:
+
+\begin{lstlisting}
+alasql.value(sql, params, callback) - execute SQL statement but return only one value
+alasql.log(sql, params) - execute SQL statement and log the results to console or into HTML tag
+\end{lstlisting}
+
+První funkce \textit{value()} vykoná dotaz, ale místo objektu nebo více hodnot vrátí pouze jednu. Druhá funkce \textit{log()} opět vykoná dotaz a rovnou výsledek vypíše do konzole nebo přímo do HTML elementu. Což se velice hodí při debugování.
+
+
+\section{Chyby}
+
+
+\section{Na závěr}
+Celkově se mi s knihovnou dělalo relativně dobře, ALE... pouze při práci společně s JavaScriptem. Dokumentace knihovny pokrývá základy a místy je vidět, že autoři mají připravené odkazy a stránky pro její rozšíření, bohužel je v ní takový celkem zmatek, některé věci jsou na více místech a většina z "live example" nefungují. Odkaz na knihovnu z wiki je ve verzi 0.3.9, což je starší verze, přitom píší, že verze v npm je verzi 0.6.4. Jediné relevantní stránky jsou ty na GitHubu, ostatní stránky v silné většině kopírují obsah a nelze načíst další relevantní zdroj. Bohužel, což mě hodně zklamalo a trošku odradilo jsou funkce, které uvádějí se zajímavými, ne-li potřebnými funkcemi a bohužel, když si je naimplementujete do svého kódu, tak vám to většinou vyhodí exception, že požadovaná funkce zavolaná nad objektem \textit{alasql} není funkcí a nefunguje. 
+
+Na druhou stranu, knihovna nabízí opravdu mnoho zajímavých funkcí a pomocí JavaScriptu jde udělat prakticky cokoliv. Je zde vždy několik cest, jak s knihovnou pracovat, to znamená, že je možné různé problémy řešit různými cestami. Knihovna je velmi populární, podle statistik si ji stáhne cca 13 000 lidí týdně. Leč na knihovně se stále pracuje (soudě podle commitů) a věřím, že autoři opraví stávající problémy a přidají ještě další funkce. Knihovna je opensource, takže kdyby jste potřebovali něco na ní založit, můžete. Také pokud vám tam něco chybí, není těžké si udělat vlastní funkci, která toto vykoná. Knihovna se z velké čísti používá jako normální SQL dotazy a uživatel JavaScriptu s ní nebude mít také problémy.
 
 \newpage
 \listoffigures

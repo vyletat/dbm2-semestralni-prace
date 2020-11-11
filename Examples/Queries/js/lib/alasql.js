@@ -1,4 +1,5 @@
 //! AlaSQL v0.3.9 | © 2014-2016 Andrey Gershun & Mathias Rangel Wulff | License: MIT
+// ODKAZ Z WIKI
 !function (e, t) {
     "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? module.exports = t() : e.alasql = t()
 }(this, function () {

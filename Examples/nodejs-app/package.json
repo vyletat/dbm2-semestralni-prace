@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "Application for the examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Bc. Tomáš Vyleta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

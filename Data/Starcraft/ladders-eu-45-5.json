@@ -1,12 +1,12 @@
 {
-  "tier": [
+  "tier": [     // 0-6 tier
     {
-      "division": [
+      "division": [   // 3 divize
         {
           "ladder_id": 230898,
           "id": 3,
           "member_count": 100
-        },
+        },    // X laddery - max 100 hracu
         {
           "ladder_id": 231081,
           "id": 9,

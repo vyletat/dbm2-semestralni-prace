@@ -6,7 +6,9 @@
 
     <!-- AlaSQL -->
     <!--  -->
-    <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.6.2/alasql.min.js"
+            integrity="sha512-2avn8of9zz17ejnalEodjUd2blM2VEwSixFrGc0BNDXBlkGBNof9w8/ajoDquplOw/RrExjv4kXQ709719C2Ng=="
+            crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <!--  -->
@@ -22,13 +24,10 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
 
-    <!-- RequireJS -->
-    <!-- https://requirejs.org -->
-    <script src="js/lib/require.js"></script>
-
     <!-- Data -->
     <script src="data/ladders-eu-a.js"></script>
-    <script src="data/ladders-eu-b-230898.js"></script>
+    <script src="data/ladders-eu-b-20201031.js"></script>
+    <script src="data/ladders-eu-b-20201101.js"></script>
 </head>
 <body>
 <h1>Starcraft data</h1>
@@ -66,10 +65,12 @@
 
 <h3>Kolik hráčů odehrálo v poslední době nějakou hru? (porovnání "last_played_time_stamp" vůči konstantě např.)</h3>
 
-<h3>Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy ("battle_tag" slouží jako identifikátor účtu, "played_race_count -> race" poskytuje info o herní rase)</h3>
+<h3>Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy ("battle_tag" slouží jako identifikátor účtu,
+    "played_race_count -> race" poskytuje info o herní rase)</h3>
 
 <h3>Jací hráči přibyli/ubyli v daných ladderech (srovnání stavů v 20201031 a 20201001)</h3>
 
-<h3>Kolik zástupců mají týmy v jednotlivých úrovních ("member -> clan_link" je info o týmu hráče) (info o úrovni ladderu lze získat v JSONu B v "league->league_key->league_id")</h3>
+<h3>Kolik zástupců mají týmy v jednotlivých úrovních ("member -> clan_link" je info o týmu hráče) (info o úrovni ladderu
+    lze získat v JSONu B v "league->league_key->league_id")</h3>
 </body>
 </html>
