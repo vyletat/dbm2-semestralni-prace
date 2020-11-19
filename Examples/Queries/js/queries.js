@@ -1,3 +1,13 @@
+alasql('ATTACH FILESTORAGE DATABASE test("./js/file.json")', function () {
+    console.log(alasql.databases.test.data);
+});
+
+alasql('ATTACH FILESTORAGE DATABASE test2("./js/file.json");USE test2;',function () {
+    console.log();
+    console.log(alasql.databases);
+});
+
+
 // Založení první databáze
 const myDatabase1 = new alasql.Database();
 // Založení tabulky
@@ -11,14 +21,6 @@ myDatabase1.exec('SELECT * FROM table1', [],        // callback
         console.log(res);
     }
 );
-
-// Promise - NEFUNGUJE
-/*alasql.promise('SELECT * FROM table1')
-    .then(function(res){
-        // Process data
-    }).catch(function(err){
-    // Process errors
-});*/
 
 
 // Založení druhé databáze
@@ -80,13 +82,13 @@ var result = myDatabase2.exec('SELECT myFunction(population) FROM cities');
 console.log(result);
 
 /*
-* Jdou i vlastni agregacni funkce
+* Jdou i vlastni agregacni funkce - NEFUNGUJE
 * funkce compile()
 * */
-var ins = alasql.compile('INSERT INTO cisla VALUES (?,?)');
+/*var ins = alasql.compile('INSERT INTO cisla VALUES (?,?)');
 ins(10,10);
 ins(20,20);
-vypisVsechnaMesta();
+vypisVsechnaMesta();*/
 
 // AST
 var ast = alasql.parse("SELECT * FROM one");
@@ -97,3 +99,11 @@ console.log(ast.toString()); // Print restored SQL statement
 /*alasql.exec(['SELECT * FROM json(?)'], ["../Data/ladders-eu-230882.json"], function(res){
     console.log(res); // output depends on mydata.xls
 });*/
+
+// Promise - NEFUNGUJE
+alasql.promise('SELECT * FROM cisla')
+    .then(function(res){
+        console.log(res);
+    }).catch(function(err){
+    // Process errors
+});

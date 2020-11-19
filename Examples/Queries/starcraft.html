@@ -24,6 +24,16 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
 
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+            integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+            crossorigin="anonymous"></script>
+
+    <!-- Require JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+            integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+            crossorigin="anonymous"></script>
+
     <!-- Data -->
     <script src="data/ladders-eu-a.js"></script>
     <script src="data/ladders-eu-b-20201031.js"></script>
@@ -54,23 +64,19 @@
 <script src="js/starcraft.js"></script>
 
 <h2>Otázky</h2>
-<h3>Kolik hráčů je v jednotlivých divizích/úrovních? (dle JSONů typu A - "member_count")</h3>
-<table id=""></table>
+<p>Kolik hráčů je v jednotlivých divizích/úrovních? (dle JSONů typu A - "member_count")</p>
+<p>Jsou konzistentní počty hráčů mezi JSON typ A a B? ("member_count" v A vs "team" v B)</p>
+<p>Seřazení hráčů v rámci jednoho ladderu (resp. přes množinu ladderů) dle ELO ("team -> rating").</p>
+<p>Jací hráči vybočují z hranic divizí? (tj. mají ELO jiné než z rozsahu "min_rating" - "max_rating" v A)</p>
+<p>Kolik hráčů odehrálo v poslední době nějakou hru? (porovnání "last_played_time_stamp" vůči konstantě např.)</p>
+<p>Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy ("battle_tag" slouží jako identifikátor účtu,
+    "played_race_count -> race" poskytuje info o herní rase)</p>
+<p>Jací hráči přibyli/ubyli v daných ladderech (srovnání stavů v 20201031 a 20201001)</p>
+<p>Kolik zástupců mají týmy v jednotlivých úrovních ("member -> clan_link" je info o týmu hráče) (info o úrovni ladderu
+    lze získat v JSONu B v "league->league_key->league_id")</p>
 
-<h3>Jsou konzistentní počty hráčů mezi JSON typ A a B? ("member_count" v A vs "team" v B)</h3>
+<h2>Instrukce</h2>
+<p>Otevřít DevTool svého prohlížeče.</p>
 
-<h3>Seřazení hráčů v rámci jednoho ladderu (resp. přes množinu ladderů) dle ELO ("team -> rating").</h3>
-
-<h3>Jací hráči vybočují z hranic divizí? (tj. mají ELO jiné než z rozsahu "min_rating" - "max_rating" v A)</h3>
-
-<h3>Kolik hráčů odehrálo v poslední době nějakou hru? (porovnání "last_played_time_stamp" vůči konstantě např.)</h3>
-
-<h3>Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy ("battle_tag" slouží jako identifikátor účtu,
-    "played_race_count -> race" poskytuje info o herní rase)</h3>
-
-<h3>Jací hráči přibyli/ubyli v daných ladderech (srovnání stavů v 20201031 a 20201001)</h3>
-
-<h3>Kolik zástupců mají týmy v jednotlivých úrovních ("member -> clan_link" je info o týmu hráče) (info o úrovni ladderu
-    lze získat v JSONu B v "league->league_key->league_id")</h3>
 </body>
 </html>
