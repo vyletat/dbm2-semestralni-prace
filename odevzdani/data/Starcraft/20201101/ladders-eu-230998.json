@@ -1,0 +1,3415 @@
+{
+  "dateCrawled": "2020-11-01",
+  "_links": {"self": {"href": "https://eu.api.blizzard.com/data/sc2/ladder/230998?namespace=prod"}},
+  "league": {
+    "league_key": {
+      "season_id": 45,
+      "team_type": 0,
+      "league_id": 5,
+      "queue_id": 201
+    },
+    "key": {"href": "https://eu.api.blizzard.com/data/sc2/league/45/201/0/5?namespace=prod"}
+  },
+  "team": [
+    {
+      "wins": 75,
+      "rating": 4507,
+      "previous_rank": 10,
+      "longest_win_streak": 7,
+      "losses": 65,
+      "join_time_stamp": 1601540536,
+      "points": 552,
+      "highest_rank": 50,
+      "last_played_time_stamp": 1604185346,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8871894/1/duke",
+          "name": "duke#2196",
+          "realm": 1,
+          "id": 8871894
+        },
+        "character_link": {
+          "id": 8871894,
+          "battle_tag": "dukegrieve#2835",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/dukegrieve-2835/8871894?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 140
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "10750405757246636032",
+      "current_rank": 1
+    },
+    {
+      "wins": 33,
+      "rating": 4436,
+      "previous_rank": 0,
+      "longest_win_streak": 3,
+      "losses": 32,
+      "join_time_stamp": 1603801799,
+      "points": 537,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604146040,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9499026/1/Ronski",
+          "name": "Ronski#583",
+          "realm": 1,
+          "id": 9499026
+        },
+        "character_link": {
+          "id": 9499026,
+          "battle_tag": "SuperPants#2159978",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SuperPants-2159978/9499026?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 65
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": 4742891926380871680,
+      "current_rank": 2
+    },
+    {
+      "wins": 76,
+      "rating": 4548,
+      "previous_rank": 49,
+      "longest_win_streak": 11,
+      "losses": 75,
+      "join_time_stamp": 1601849435,
+      "points": 517,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604016424,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/4642945/1/Miam",
+          "name": "Miam#933",
+          "realm": 1,
+          "id": 4642945
+        },
+        "character_link": {
+          "id": 4642945,
+          "battle_tag": "Miam#2240",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Miam-2240/4642945?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 151
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "14843899642084589568",
+      "current_rank": 3
+    },
+    {
+      "wins": 97,
+      "rating": 4528,
+      "previous_rank": 5,
+      "longest_win_streak": 8,
+      "losses": 103,
+      "join_time_stamp": 1601528016,
+      "points": 517,
+      "highest_rank": 20,
+      "last_played_time_stamp": 1604045506,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1335485/1/dfg",
+          "name": "dfg#791",
+          "realm": 1,
+          "id": 1335485
+        },
+        "character_link": {
+          "id": 1335485,
+          "battle_tag": "dfg#2981",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/dfg-2981/1335485?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 200
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 943817568647380992,
+      "current_rank": 4
+    },
+    {
+      "wins": 61,
+      "rating": 4370,
+      "previous_rank": 4,
+      "longest_win_streak": 9,
+      "losses": 40,
+      "join_time_stamp": 1602606705,
+      "points": 510,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604066163,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9468358/1/IIIIIIIIIIII",
+          "name": "IIIIIIIIIIII#17179",
+          "realm": 1,
+          "id": 9468358
+        },
+        "character_link": {
+          "id": 9468358,
+          "battle_tag": "Maxvel#21456",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Maxvel-21456/9468358?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 101
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "14142743276075089920",
+      "current_rank": 5
+    },
+    {
+      "wins": 138,
+      "rating": 4230,
+      "previous_rank": 0,
+      "longest_win_streak": 16,
+      "losses": 141,
+      "join_time_stamp": 1603484542,
+      "points": 505,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604009440,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8675815/1/xdxdxdxdxdxd",
+          "name": "xdxdxdxdxdxd#570",
+          "realm": 1,
+          "id": 8675815
+        },
+        "character_link": {
+          "id": 8675815,
+          "battle_tag": "xdxdxdxdxdxx#2374",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/xdxdxdxdxdxx-2374/8675815?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 279
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "14985477157323538432",
+      "current_rank": 6
+    },
+    {
+      "wins": 54,
+      "rating": 4490,
+      "previous_rank": 19,
+      "longest_win_streak": 4,
+      "losses": 47,
+      "join_time_stamp": 1601531507,
+      "points": 503,
+      "highest_rank": 43,
+      "last_played_time_stamp": 1604009322,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1477374/2/limboid",
+          "name": "limboid#636",
+          "realm": 2,
+          "id": 1477374
+        },
+        "character_link": {
+          "id": 1477374,
+          "battle_tag": "limbo#22984",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/limbo-22984/1477374?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/2967d8cc196174be97b4f4af0a73c2e560f6a7a37e292e7abe8e421cfc478db7.clfl",
+          "clan_name": "PLAT00N",
+          "decal_url": "http://EU.depot.battle.net:1119/2967d8cc196174be97b4f4af0a73c2e560f6a7a37e292e7abe8e421cfc478db7.clfl",
+          "clan_tag": "PLA2N",
+          "id": 79929
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 101
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 2457871468373999616,
+      "current_rank": 7
+    },
+    {
+      "wins": 30,
+      "rating": 4378,
+      "previous_rank": 0,
+      "longest_win_streak": 8,
+      "losses": 10,
+      "join_time_stamp": 1603837876,
+      "points": 491,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604017064,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3435169/1/GLHFGG",
+          "name": "GLHFGG#866",
+          "realm": 1,
+          "id": 3435169
+        },
+        "character_link": {
+          "id": 3435169,
+          "battle_tag": "HuEhUeHUeHuE#1233",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/HuEhUeHUeHuE-1233/3435169?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 40
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": "17618124709126209536",
+      "current_rank": 8
+    },
+    {
+      "wins": 89,
+      "rating": 4378,
+      "previous_rank": 0,
+      "longest_win_streak": 7,
+      "losses": 75,
+      "join_time_stamp": 1603783554,
+      "points": 481,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603783554,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2522152/2/Artvel",
+          "name": "Artvel#126",
+          "realm": 2,
+          "id": 2522152
+        },
+        "character_link": {
+          "id": 2522152,
+          "battle_tag": "Artvel#2110",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Artvel-2110/2522152?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 164
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": 844456901868519424,
+      "current_rank": 9
+    },
+    {
+      "wins": 321,
+      "rating": 4361,
+      "previous_rank": 9,
+      "longest_win_streak": 8,
+      "losses": 331,
+      "join_time_stamp": 1601550640,
+      "points": 445,
+      "highest_rank": 8,
+      "last_played_time_stamp": 1604164559,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1551966/1/spark",
+          "name": "spark#975",
+          "realm": 1,
+          "id": 1551966
+        },
+        "character_link": {
+          "id": 1551966,
+          "battle_tag": "Ucantstopme#2792",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Ucantstopme-2792/1551966?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 652
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "10459360631327817728",
+      "current_rank": 10
+    },
+    {
+      "wins": 32,
+      "rating": 4314,
+      "previous_rank": 24,
+      "longest_win_streak": 3,
+      "losses": 43,
+      "join_time_stamp": 1601551429,
+      "points": 436,
+      "highest_rank": 92,
+      "last_played_time_stamp": 1604183942,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/591393/1/SplitSeven",
+          "name": "SplitSeven#375",
+          "realm": 1,
+          "id": 591393
+        },
+        "character_link": {
+          "id": 591393,
+          "battle_tag": "SplitSeven#2601",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SplitSeven-2601/591393?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "ZBL Crew",
+          "clan_tag": "ZBL",
+          "id": 396553
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 75
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 9174427362643673088,
+      "current_rank": 11
+    },
+    {
+      "wins": 42,
+      "rating": 4365,
+      "previous_rank": 10,
+      "longest_win_streak": 5,
+      "losses": 42,
+      "join_time_stamp": 1601552334,
+      "points": 427,
+      "highest_rank": 99,
+      "last_played_time_stamp": 1603991900,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2173785/1/WindSteel",
+          "name": "WindSteel#137",
+          "realm": 1,
+          "id": 2173785
+        },
+        "character_link": {
+          "id": 2173785,
+          "battle_tag": "steelclone#2580",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/steelclone-2580/2173785?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 84
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 6149134312957542400,
+      "current_rank": 12
+    },
+    {
+      "wins": 58,
+      "rating": 4540,
+      "previous_rank": 7,
+      "longest_win_streak": 12,
+      "losses": 35,
+      "join_time_stamp": 1602873093,
+      "points": 415,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603801414,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9063180/1/TOTOPOTATO",
+          "name": "TOTOPOTATO#751",
+          "realm": 1,
+          "id": 9063180
+        },
+        "character_link": {
+          "id": 9063180,
+          "battle_tag": "LuckyOwl#2144739",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/LuckyOwl-2144739/9063180?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 93
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 3448664485907136512,
+      "current_rank": 13
+    },
+    {
+      "wins": 30,
+      "rating": 4487,
+      "previous_rank": 11,
+      "longest_win_streak": 4,
+      "losses": 32,
+      "join_time_stamp": 1601549749,
+      "points": 412,
+      "highest_rank": 42,
+      "last_played_time_stamp": 1603911623,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7277403/1/SuperSilver",
+          "name": "SuperSilver#590",
+          "realm": 1,
+          "id": 7277403
+        },
+        "character_link": {
+          "id": 7277403,
+          "battle_tag": "SuperSilver#21866",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SuperSilver-21866/7277403?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/b39a022690a8b1946271d87444e3ee867c840639d5ef83fd4df984377d62fd19.clfl",
+          "clan_name": "PŖIMĄL ĄLPHĄ ŽERØ",
+          "decal_url": "http://EU.depot.battle.net:1119/d650b9a18acdd9e49d19620d4b90e8b0e262d1ec919b06bec4ab9bb5d8a2aa7a.clfl",
+          "clan_tag": "PŖïMĄŁ",
+          "id": 445165
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 62
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "14360885283514220544",
+      "current_rank": 14
+    },
+    {
+      "wins": 21,
+      "rating": 4766,
+      "previous_rank": 0,
+      "longest_win_streak": 21,
+      "losses": 0,
+      "join_time_stamp": 1603780112,
+      "points": 404,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603780971,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/4490321/1/OsoCerdo",
+          "name": "OsoCerdo#341",
+          "realm": 1,
+          "id": 4490321
+        },
+        "character_link": {
+          "id": 4490321,
+          "battle_tag": "Satanass#11791",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Satanass-11791/4490321?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "HombreOsoCerdo",
+          "clan_tag": "Hombre",
+          "id": 441299
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 21
+        }]
+      }],
+      "current_win_streak": 21,
+      "id": "15902251052074795008",
+      "current_rank": 15
+    },
+    {
+      "wins": 72,
+      "rating": 4345,
+      "previous_rank": 17,
+      "longest_win_streak": 6,
+      "losses": 80,
+      "join_time_stamp": 1601544405,
+      "points": 394,
+      "highest_rank": 25,
+      "last_played_time_stamp": 1604179833,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/383109/1/ReunioN",
+          "name": "ReunioN#612",
+          "realm": 1,
+          "id": 383109
+        },
+        "character_link": {
+          "id": 383109,
+          "battle_tag": "StimPack#2319",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/StimPack-2319/383109?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 152
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "11041732358142164992",
+      "current_rank": 16
+    },
+    {
+      "wins": 69,
+      "rating": 4342,
+      "previous_rank": 27,
+      "longest_win_streak": 6,
+      "losses": 85,
+      "join_time_stamp": 1601532662,
+      "points": 370,
+      "highest_rank": 44,
+      "last_played_time_stamp": 1604166956,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9002502/1/Delevingne",
+          "name": "Delevingne#623",
+          "realm": 1,
+          "id": 9002502
+        },
+        "character_link": {
+          "id": 9002502,
+          "battle_tag": "NinjaRobot#110895",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/NinjaRobot-110895/9002502?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 154
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 2674888675417915392,
+      "current_rank": 17
+    },
+    {
+      "wins": 93,
+      "rating": 4197,
+      "previous_rank": 21,
+      "longest_win_streak": 6,
+      "losses": 103,
+      "join_time_stamp": 1601532463,
+      "points": 312,
+      "highest_rank": 32,
+      "last_played_time_stamp": 1604163557,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/745234/1/Atreides",
+          "name": "Atreides#228",
+          "realm": 1,
+          "id": 745234
+        },
+        "character_link": {
+          "id": 745234,
+          "battle_tag": "Atreides#2249",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Atreides-2249/745234?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "SkyForce",
+          "clan_tag": "SkyF",
+          "id": 16334
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 196
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "12330606276500258816",
+      "current_rank": 18
+    },
+    {
+      "wins": 48,
+      "rating": 4159,
+      "previous_rank": 31,
+      "longest_win_streak": 5,
+      "losses": 62,
+      "join_time_stamp": 1601537026,
+      "points": 304,
+      "highest_rank": 59,
+      "last_played_time_stamp": 1604170840,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/302308/2/Mankatsu",
+          "name": "Mankatsu#396",
+          "realm": 2,
+          "id": 302308
+        },
+        "character_link": {
+          "id": 302308,
+          "battle_tag": "Mankatsu#2574",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Mankatsu-2574/302308?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 110
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": 6352359246142636032,
+      "current_rank": 19
+    },
+    {
+      "wins": 104,
+      "rating": 4186,
+      "previous_rank": 20,
+      "longest_win_streak": 5,
+      "losses": 116,
+      "join_time_stamp": 1601542671,
+      "points": 297,
+      "highest_rank": 23,
+      "last_played_time_stamp": 1604069670,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1156696/1/ClaytonBixbi",
+          "name": "ClaytonBixbi#397",
+          "realm": 1,
+          "id": 1156696
+        },
+        "character_link": {
+          "id": 1156696,
+          "battle_tag": "CLaytonBixbi#2778",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/CLaytonBixbi-2778/1156696?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/4663ecaa010c30fa1a08a49249f147504a91bfa8a011ba42888c5fc28528232d.clfl",
+          "clan_name": "Senioren Bande",
+          "decal_url": "http://EU.depot.battle.net:1119/4663ecaa010c30fa1a08a49249f147504a91bfa8a011ba42888c5fc28528232d.clfl",
+          "clan_tag": "SeBa",
+          "id": 62356
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 220
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "15364062100510998528",
+      "current_rank": 20
+    },
+    {
+      "wins": 24,
+      "rating": 4342,
+      "previous_rank": 74,
+      "longest_win_streak": 4,
+      "losses": 26,
+      "join_time_stamp": 1602613979,
+      "points": 282,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604077488,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1850538/1/Hurricane",
+          "name": "Hurricane#486",
+          "realm": 1,
+          "id": 1850538
+        },
+        "character_link": {
+          "id": 1850538,
+          "battle_tag": "CoolŒuvre#2418",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Cool%C5%92uvre-2418/1850538?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 50
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5613212554370220032,
+      "current_rank": 21
+    },
+    {
+      "wins": 65,
+      "rating": 4383,
+      "previous_rank": 0,
+      "longest_win_streak": 5,
+      "losses": 56,
+      "join_time_stamp": 1602559121,
+      "points": 272,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602559965,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9454703/1/Sumire",
+          "name": "Sumire#447",
+          "realm": 1,
+          "id": 9454703
+        },
+        "character_link": {
+          "id": 9454703,
+          "battle_tag": "Damz#21891",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Damz-21891/9454703?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 121
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 8362372054833430528,
+      "current_rank": 22
+    },
+    {
+      "wins": 60,
+      "rating": 4381,
+      "previous_rank": 30,
+      "longest_win_streak": 6,
+      "losses": 63,
+      "join_time_stamp": 1601547935,
+      "points": 250,
+      "highest_rank": 11,
+      "last_played_time_stamp": 1604056180,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8826450/1/BuffProtoss",
+          "name": "BuffProtoss#974",
+          "realm": 1,
+          "id": 8826450
+        },
+        "character_link": {
+          "id": 8826450,
+          "battle_tag": "BuffProtoss#2218",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/BuffProtoss-2218/8826450?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 123
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "14498808022102441984",
+      "current_rank": 23
+    },
+    {
+      "wins": 22,
+      "rating": 4085,
+      "previous_rank": 25,
+      "longest_win_streak": 3,
+      "losses": 36,
+      "join_time_stamp": 1603548554,
+      "points": 248,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604155504,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/5290884/1/FishyFetus",
+          "name": "FishyFetus#649",
+          "realm": 1,
+          "id": 5290884
+        },
+        "character_link": {
+          "id": 5290884,
+          "battle_tag": "FishyFetus#2196",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/FishyFetus-2196/5290884?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 58
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 9095053618234523648,
+      "current_rank": 24
+    },
+    {
+      "wins": 46,
+      "rating": 4297,
+      "previous_rank": 0,
+      "longest_win_streak": 9,
+      "losses": 32,
+      "join_time_stamp": 1602236552,
+      "points": 230,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602683690,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2161449/1/simpai",
+          "name": "simpai#180",
+          "realm": 1,
+          "id": 2161449
+        },
+        "character_link": {
+          "id": 2161449,
+          "battle_tag": "s1mpai#2923",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/s1mpai-2923/2161449?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 78
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "16823792429244088320",
+      "current_rank": 25
+    },
+    {
+      "wins": 12,
+      "rating": 4417,
+      "previous_rank": 17,
+      "longest_win_streak": 8,
+      "losses": 10,
+      "join_time_stamp": 1602537190,
+      "points": 217,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603568510,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2437172/1/zavix",
+          "name": "zavix#210",
+          "realm": 1,
+          "id": 2437172
+        },
+        "character_link": {
+          "id": 2437172,
+          "battle_tag": "zavix#2846",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/zavix-2846/2437172?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 22
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "15856368431847702528",
+      "current_rank": 26
+    },
+    {
+      "wins": 34,
+      "rating": 4363,
+      "previous_rank": 26,
+      "longest_win_streak": 5,
+      "losses": 40,
+      "join_time_stamp": 1601535458,
+      "points": 214,
+      "highest_rank": 49,
+      "last_played_time_stamp": 1604081158,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1991384/2/gehemon",
+          "name": "gehemon#347",
+          "realm": 2,
+          "id": 1991384
+        },
+        "character_link": {
+          "id": 1991384,
+          "battle_tag": "gehemon#2635",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/gehemon-2635/1991384?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 74
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5414766098719440896,
+      "current_rank": 27
+    },
+    {
+      "wins": 22,
+      "rating": 4317,
+      "previous_rank": 27,
+      "longest_win_streak": 7,
+      "losses": 23,
+      "join_time_stamp": 1601541567,
+      "points": 212,
+      "highest_rank": 68,
+      "last_played_time_stamp": 1604155783,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1940382/2/youhavelost",
+          "name": "youhavelost#503",
+          "realm": 2,
+          "id": 1940382
+        },
+        "character_link": {
+          "id": 1940382,
+          "battle_tag": "youhavelost#21627",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/youhavelost-21627/1940382?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 45
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 8877471262213931008,
+      "current_rank": 28
+    },
+    {
+      "wins": 19,
+      "rating": 4207,
+      "previous_rank": 35,
+      "longest_win_streak": 3,
+      "losses": 31,
+      "join_time_stamp": 1601539175,
+      "points": 202,
+      "highest_rank": 63,
+      "last_played_time_stamp": 1604075178,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7162097/1/MMA",
+          "name": "MMA#337",
+          "realm": 1,
+          "id": 7162097
+        },
+        "character_link": {
+          "id": 7162097,
+          "battle_tag": "SMURF1234#21196",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SMURF1234-21196/7162097?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 50
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": "17738866479018803200",
+      "current_rank": 29
+    },
+    {
+      "wins": 16,
+      "rating": 4425,
+      "previous_rank": 57,
+      "longest_win_streak": 3,
+      "losses": 22,
+      "join_time_stamp": 1601568398,
+      "points": 165,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603557782,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3186063/1/charlix",
+          "name": "charlix#740",
+          "realm": 1,
+          "id": 3186063
+        },
+        "character_link": {
+          "id": 3186063,
+          "battle_tag": "charlix#2807",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/charlix-2807/3186063?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 38
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 476006157354270720,
+      "current_rank": 30
+    },
+    {
+      "wins": 17,
+      "rating": 4337,
+      "previous_rank": 0,
+      "longest_win_streak": 4,
+      "losses": 20,
+      "join_time_stamp": 1603203589,
+      "points": 160,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603672893,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2430973/1/Whirros",
+          "name": "Whirros#902",
+          "realm": 1,
+          "id": 2430973
+        },
+        "character_link": {
+          "id": 2430973,
+          "battle_tag": "Whirros#2410",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Whirros-2410/2430973?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 37
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "18005147304545222656",
+      "current_rank": 31
+    },
+    {
+      "wins": 4,
+      "rating": 4366,
+      "previous_rank": 0,
+      "longest_win_streak": 3,
+      "losses": 4,
+      "join_time_stamp": 1602603476,
+      "points": 148,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602605725,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1458996/1/VoiceOfFall",
+          "name": "VoiceOfFall#540",
+          "realm": 1,
+          "id": 1458996
+        },
+        "character_link": {
+          "id": 1458996,
+          "battle_tag": "TheGreatNeo#2813",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/TheGreatNeo-2813/1458996?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/f5b22ee4b6a1e5f86e17c6cba5497f079be54c4f7397e4bfb8caf1483a867776.clfl",
+          "clan_name": "Vengeance Fishing Club",
+          "decal_url": "http://EU.depot.battle.net:1119/f5b22ee4b6a1e5f86e17c6cba5497f079be54c4f7397e4bfb8caf1483a867776.clfl",
+          "clan_tag": "VFish",
+          "id": 350448
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 8
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7353003887860645888,
+      "current_rank": 32
+    },
+    {
+      "wins": 8,
+      "rating": 4386,
+      "previous_rank": 31,
+      "longest_win_streak": 6,
+      "losses": 5,
+      "join_time_stamp": 1601871941,
+      "points": 129,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603688019,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1907524/2/Yála",
+          "name": "Yála#343",
+          "realm": 2,
+          "id": 1907524
+        },
+        "character_link": {
+          "id": 1907524,
+          "battle_tag": "Alivan#2500",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Alivan-2500/1907524?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 13
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7291081592007557120,
+      "current_rank": 33
+    },
+    {
+      "wins": 20,
+      "rating": 4308,
+      "previous_rank": 33,
+      "longest_win_streak": 5,
+      "losses": 22,
+      "join_time_stamp": 1601546365,
+      "points": 124,
+      "highest_rank": 21,
+      "last_played_time_stamp": 1602631800,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3143188/1/Tight",
+          "name": "Tight#432",
+          "realm": 1,
+          "id": 3143188
+        },
+        "character_link": {
+          "id": 3143188,
+          "battle_tag": "Tight#2966",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Tight-2966/3143188?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/b3c3cf679f4678ba08e54336519fd36f0f3b1681cf97dafc9ccefa24aec25ea1.clfl",
+          "clan_name": "Aachen eSport",
+          "decal_url": "http://EU.depot.battle.net:1119/dea1e93cd5e9445d151927dc1f7573e591cd1f25385d4cfeabfd6cf53d4a496d.clfl",
+          "clan_tag": "ACe",
+          "id": 762
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 42
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "10008999569079140352",
+      "current_rank": 34
+    },
+    {
+      "wins": 13,
+      "rating": 4350,
+      "previous_rank": 48,
+      "longest_win_streak": 5,
+      "losses": 19,
+      "join_time_stamp": 1601541266,
+      "points": 124,
+      "highest_rank": 67,
+      "last_played_time_stamp": 1603222250,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2592290/1/Sizzle",
+          "name": "Sizzle#221",
+          "realm": 1,
+          "id": 2592290
+        },
+        "character_link": {
+          "id": 2592290,
+          "battle_tag": "ilooveDua#2526",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/ilooveDua-2526/2592290?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 32
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 1600217214336630784,
+      "current_rank": 35
+    },
+    {
+      "wins": 4,
+      "rating": 4371,
+      "previous_rank": 0,
+      "longest_win_streak": 3,
+      "losses": 1,
+      "join_time_stamp": 1601701727,
+      "points": 122,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604143529,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/6147155/1/max",
+          "name": "max#8344",
+          "realm": 1,
+          "id": 6147155
+        },
+        "character_link": {
+          "id": 6147155,
+          "battle_tag": "Max#29742",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Max-29742/6147155?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 5
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "16954959768391254016",
+      "current_rank": 36
+    },
+    {
+      "wins": 12,
+      "rating": 4407,
+      "previous_rank": 39,
+      "longest_win_streak": 4,
+      "losses": 12,
+      "join_time_stamp": 1601797671,
+      "points": 122,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603107105,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2175601/1/Sazzaro",
+          "name": "Sazzaro#500",
+          "realm": 1,
+          "id": 2175601
+        },
+        "character_link": {
+          "id": 2175601,
+          "battle_tag": "Sazzaro#2576",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Sazzaro-2576/2175601?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 24
+        }]
+      }],
+      "current_win_streak": 4,
+      "id": 4295060840387706880,
+      "current_rank": 37
+    },
+    {
+      "wins": 2,
+      "rating": 4384,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 2,
+      "join_time_stamp": 1601897040,
+      "points": 121,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601897040,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/4513609/1/Timo",
+          "name": "Timo#1869",
+          "realm": 1,
+          "id": 4513609
+        },
+        "character_link": {
+          "id": 4513609,
+          "battle_tag": "Timo#2776",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Timo-2776/4513609?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/7a10dec505ba5ad093519df2b1f31aa8bf4c3ed5cdea261371fa6187f3f4f056.clfl",
+          "clan_name": "Defensive Cannоns",
+          "decal_url": "http://EU.depot.battle.net:1119/7a10dec505ba5ad093519df2b1f31aa8bf4c3ed5cdea261371fa6187f3f4f056.clfl",
+          "clan_tag": "Cannоn",
+          "id": 468799
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 4
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 1653135609469861888,
+      "current_rank": 38
+    },
+    {
+      "wins": 28,
+      "rating": 4420,
+      "previous_rank": 39,
+      "longest_win_streak": 5,
+      "losses": 26,
+      "join_time_stamp": 1601536976,
+      "points": 107,
+      "highest_rank": 28,
+      "last_played_time_stamp": 1602833003,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/6685685/1/Zagara",
+          "name": "Zagara#538",
+          "realm": 1,
+          "id": 6685685
+        },
+        "character_link": {
+          "id": 6685685,
+          "battle_tag": "TheButcher#2172",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/TheButcher-2172/6685685?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "LightFromVoid",
+          "clan_tag": "LFVoid",
+          "id": 427266
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 54
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7143866880653000704,
+      "current_rank": 39
+    },
+    {
+      "wins": 27,
+      "rating": 4329,
+      "previous_rank": 83,
+      "longest_win_streak": 4,
+      "losses": 36,
+      "join_time_stamp": 1601546020,
+      "points": 104,
+      "highest_rank": 78,
+      "last_played_time_stamp": 1602957000,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/16265/2/Толкач",
+          "name": "Толкач#184",
+          "realm": 2,
+          "id": 16265
+        },
+        "character_link": {
+          "id": 16265,
+          "battle_tag": "thefrol#2533",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/thefrol-2533/16265?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 63
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "15222198712248827904",
+      "current_rank": 40
+    },
+    {
+      "wins": 9,
+      "rating": 4366,
+      "previous_rank": 0,
+      "longest_win_streak": 4,
+      "losses": 4,
+      "join_time_stamp": 1601583321,
+      "points": 102,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601583321,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/4902597/1/Farelowsnu",
+          "name": "Farelowsnu#710",
+          "realm": 1,
+          "id": 4902597
+        },
+        "character_link": {
+          "id": 4902597,
+          "battle_tag": "Farelowsnu#2878",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Farelowsnu-2878/4902597?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 13
+        }]
+      }],
+      "current_win_streak": 4,
+      "id": "17341986761856778240",
+      "current_rank": 41
+    },
+    {
+      "wins": 16,
+      "rating": 4517,
+      "previous_rank": 5,
+      "longest_win_streak": 6,
+      "losses": 11,
+      "join_time_stamp": 1601539506,
+      "points": 100,
+      "highest_rank": 64,
+      "last_played_time_stamp": 1602165860,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2439251/1/SpaceMarine",
+          "name": "SpaceMarine#517",
+          "realm": 1,
+          "id": 2439251
+        },
+        "character_link": {
+          "id": 2439251,
+          "battle_tag": "SpaceMarine#21678",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SpaceMarine-21678/2439251?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/2690b4dcfcd34c9b538cb19d2923fa78a60221bb7701f36be2f9ad10bece271c.clfl",
+          "clan_name": "The Art of Warfare",
+          "decal_url": "http://EU.depot.battle.net:1119/2690b4dcfcd34c9b538cb19d2923fa78a60221bb7701f36be2f9ad10bece271c.clfl",
+          "clan_tag": "TAW",
+          "id": 318
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 27
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 8804287768269160448,
+      "current_rank": 42
+    },
+    {
+      "wins": 1,
+      "rating": 4357,
+      "previous_rank": 29,
+      "longest_win_streak": 1,
+      "losses": 2,
+      "join_time_stamp": 1602187118,
+      "points": 97,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602798897,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3096770/1/Spectre",
+          "name": "Spectre#1392",
+          "realm": 1,
+          "id": 3096770
+        },
+        "character_link": {
+          "id": 3096770,
+          "battle_tag": "Itachi#23462",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Itachi-23462/3096770?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/0e048c3357c504ea6a8fb4db9d5251a923705322ac110c13c8ea0d21c855f558.clfl",
+          "clan_name": "Wild Boars esports",
+          "decal_url": "http://EU.depot.battle.net:1119/0e048c3357c504ea6a8fb4db9d5251a923705322ac110c13c8ea0d21c855f558.clfl",
+          "clan_tag": "WBO",
+          "id": 375095
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 3
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 4372187183029682176,
+      "current_rank": 43
+    },
+    {
+      "wins": 13,
+      "rating": 4376,
+      "previous_rank": 0,
+      "longest_win_streak": 4,
+      "losses": 10,
+      "join_time_stamp": 1601552331,
+      "points": 96,
+      "highest_rank": 2,
+      "last_played_time_stamp": 1601552331,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9206877/1/StOnEd",
+          "name": "StOnEd#922",
+          "realm": 1,
+          "id": 9206877
+        },
+        "character_link": {
+          "id": 9206877,
+          "battle_tag": "NoOob#21937",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/NoOob-21937/9206877?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "ExpandGaming",
+          "clan_tag": "TExGG",
+          "id": 463406
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 23
+        }]
+      }],
+      "current_win_streak": 4,
+      "id": "11468729897812230144",
+      "current_rank": 44
+    },
+    {
+      "wins": 2,
+      "rating": 4380,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 0,
+      "join_time_stamp": 1601552128,
+      "points": 96,
+      "highest_rank": 3,
+      "last_played_time_stamp": 1602257217,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/5432080/1/gag",
+          "name": "gag#985",
+          "realm": 1,
+          "id": 5432080
+        },
+        "character_link": {
+          "id": 5432080,
+          "battle_tag": "Kickster#2495",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Kickster-2495/5432080?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 2
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "14433787302482280448",
+      "current_rank": 45
+    },
+    {
+      "wins": 24,
+      "rating": 4305,
+      "previous_rank": 47,
+      "longest_win_streak": 4,
+      "losses": 29,
+      "join_time_stamp": 1601544856,
+      "points": 93,
+      "highest_rank": 13,
+      "last_played_time_stamp": 1603984775,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/172802/1/psychobenny",
+          "name": "psychobenny#859",
+          "realm": 1,
+          "id": 172802
+        },
+        "character_link": {
+          "id": 172802,
+          "battle_tag": "psychobenny#2692",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/psychobenny-2692/172802?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 53
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "18247491761934958592",
+      "current_rank": 46
+    },
+    {
+      "wins": 118,
+      "rating": 4088,
+      "previous_rank": 45,
+      "longest_win_streak": 8,
+      "losses": 133,
+      "join_time_stamp": 1601551170,
+      "points": 87,
+      "highest_rank": 91,
+      "last_played_time_stamp": 1603475283,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/955661/1/Dav",
+          "name": "Dav#442",
+          "realm": 1,
+          "id": 955661
+        },
+        "character_link": {
+          "id": 955661,
+          "battle_tag": "Dav#2961",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Dav-2961/955661?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/b39a022690a8b1946271d87444e3ee867c840639d5ef83fd4df984377d62fd19.clfl",
+          "clan_name": "PŖIMĄL ĄLPHĄ ŽERØ",
+          "decal_url": "http://EU.depot.battle.net:1119/d650b9a18acdd9e49d19620d4b90e8b0e262d1ec919b06bec4ab9bb5d8a2aa7a.clfl",
+          "clan_tag": "PŖïMĄŁ",
+          "id": 445165
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 251
+        }]
+      }],
+      "current_win_streak": 4,
+      "id": 1392207206547456000,
+      "current_rank": 47
+    },
+    {
+      "wins": 1,
+      "rating": 4370,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 1,
+      "join_time_stamp": 1601545814,
+      "points": 83,
+      "highest_rank": 6,
+      "last_played_time_stamp": 1604171730,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2012729/2/llllllllllll",
+          "name": "llllllllllll#15120",
+          "realm": 2,
+          "id": 2012729
+        },
+        "character_link": {
+          "id": 2012729,
+          "battle_tag": "HARDmodeON#21646",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/HARDmodeON-21646/2012729?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 2
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 5925924656425992192,
+      "current_rank": 48
+    },
+    {
+      "wins": 11,
+      "rating": 4452,
+      "previous_rank": 45,
+      "longest_win_streak": 3,
+      "losses": 8,
+      "join_time_stamp": 1601542794,
+      "points": 76,
+      "highest_rank": 73,
+      "last_played_time_stamp": 1603818645,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/381529/1/PacWac",
+          "name": "PacWac#427",
+          "realm": 1,
+          "id": 381529
+        },
+        "character_link": {
+          "id": 381529,
+          "battle_tag": "McShane#2259",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/McShane-2259/381529?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/7bbee341b4dcbd151eeb2585277b43adb4f6785a0d8ef82121f2a61f68242438.clfl",
+          "clan_name": "Irish SC",
+          "decal_url": "http://EU.depot.battle.net:1119/7bbee341b4dcbd151eeb2585277b43adb4f6785a0d8ef82121f2a61f68242438.clfl",
+          "clan_tag": "AISC",
+          "id": 179835
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 19
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "16084638040890277888",
+      "current_rank": 49
+    },
+    {
+      "wins": 7,
+      "rating": 4436,
+      "previous_rank": 52,
+      "longest_win_streak": 2,
+      "losses": 15,
+      "join_time_stamp": 1602187801,
+      "points": 68,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604150684,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7590415/1/Chuckie",
+          "name": "Chuckie#860",
+          "realm": 1,
+          "id": 7590415
+        },
+        "character_link": {
+          "id": 7590415,
+          "battle_tag": "Chuckie#21350",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Chuckie-21350/7590415?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 22
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "14461094773269725184",
+      "current_rank": 50
+    },
+    {
+      "wins": 6,
+      "rating": 4295,
+      "previous_rank": 0,
+      "longest_win_streak": 4,
+      "losses": 11,
+      "join_time_stamp": 1603759636,
+      "points": 66,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604079204,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9322828/1/Jokkushka",
+          "name": "Jokkushka#594",
+          "realm": 1,
+          "id": 9322828
+        },
+        "character_link": {
+          "id": 9322828,
+          "battle_tag": "ГрибноеПиво#2745",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/%D0%93%D1%80%D0%B8%D0%B1%D0%BD%D0%BE%D0%B5%D0%9F%D0%B8%D0%B2%D0%BE-2745/9322828?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/266350cc571c3bf1cab7609f41dc8805c5cae9060b6828e36c7153ec9b73d0d8.clfl",
+          "clan_name": "New Guardian",
+          "decal_url": "http://EU.depot.battle.net:1119/033f8c4a678a5147af202a8fbeff3635464d8ae503b96a0ee1326dd746932713.clfl",
+          "clan_tag": "NWGD",
+          "id": 464892
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 17
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 6134497614168588288,
+      "current_rank": 51
+    },
+    {
+      "wins": 12,
+      "rating": 4453,
+      "previous_rank": 49,
+      "longest_win_streak": 8,
+      "losses": 11,
+      "join_time_stamp": 1601646496,
+      "points": 64,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603545724,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2123755/2/TestDrive",
+          "name": "TestDrive#784",
+          "realm": 2,
+          "id": 2123755
+        },
+        "character_link": {
+          "id": 2123755,
+          "battle_tag": "Monster#25552",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Monster-25552/2123755?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "The Rapid Warriors",
+          "clan_tag": "TheRPW",
+          "id": 462033
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 23
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "14359760483119005696",
+      "current_rank": 52
+    },
+    {
+      "wins": 6,
+      "rating": 4557,
+      "previous_rank": 57,
+      "longest_win_streak": 3,
+      "losses": 4,
+      "join_time_stamp": 1601681580,
+      "points": 50,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602612848,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9170372/1/llllllllllll",
+          "name": "llllllllllll#15294",
+          "realm": 1,
+          "id": 9170372
+        },
+        "character_link": {
+          "id": 9170372,
+          "battle_tag": "Jay#25414",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Jay-25414/9170372?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 10
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "15043463201549189120",
+      "current_rank": 53
+    },
+    {
+      "wins": 6,
+      "rating": 4362,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 7,
+      "join_time_stamp": 1603208026,
+      "points": 46,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603717292,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8979553/1/RedKing",
+          "name": "RedKing#627",
+          "realm": 1,
+          "id": 8979553
+        },
+        "character_link": {
+          "id": 8979553,
+          "battle_tag": "RedKing#21537",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/RedKing-21537/8979553?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "BanlingNest",
+          "clan_tag": "BNest",
+          "id": 419116
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 13
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 3221804450771369984,
+      "current_rank": 54
+    },
+    {
+      "wins": 7,
+      "rating": 4420,
+      "previous_rank": 55,
+      "longest_win_streak": 2,
+      "losses": 7,
+      "join_time_stamp": 1601544406,
+      "points": 44,
+      "highest_rank": 76,
+      "last_played_time_stamp": 1603885819,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2107378/1/SpiderPig",
+          "name": "SpiderPig#899",
+          "realm": 1,
+          "id": 2107378
+        },
+        "character_link": {
+          "id": 2107378,
+          "battle_tag": "SpiderPig#2756",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/SpiderPig-2756/2107378?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/c244a335a5338233f5f68d5f41ce896350962bd8652b115a499fb9d8093f0d7a.clfl",
+          "clan_name": "Peepmoders",
+          "decal_url": "http://EU.depot.battle.net:1119/c244a335a5338233f5f68d5f41ce896350962bd8652b115a499fb9d8093f0d7a.clfl",
+          "clan_tag": "Peeps",
+          "id": 407720
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 14
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "12626999426976579584",
+      "current_rank": 55
+    },
+    {
+      "wins": 16,
+      "rating": 3710,
+      "previous_rank": 0,
+      "longest_win_streak": 3,
+      "losses": 39,
+      "join_time_stamp": 1603143683,
+      "points": 36,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603651928,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8601577/1/Muori",
+          "name": "Muori#818",
+          "realm": 1,
+          "id": 8601577
+        },
+        "character_link": {
+          "id": 8601577,
+          "battle_tag": "Muori#21875",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Muori-21875/8601577?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/23cb74de9028437e42a5dfac10f24d41524ae42ad607e12d3136e9ebb564a2c7.clfl",
+          "clan_name": "Muori",
+          "decal_url": "http://EU.depot.battle.net:1119/23cb74de9028437e42a5dfac10f24d41524ae42ad607e12d3136e9ebb564a2c7.clfl",
+          "clan_tag": "Muori",
+          "id": 467030
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 55
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "17329611758486159360",
+      "current_rank": 56
+    },
+    {
+      "wins": 5,
+      "rating": 4326,
+      "previous_rank": 61,
+      "longest_win_streak": 1,
+      "losses": 13,
+      "join_time_stamp": 1601541350,
+      "points": 32,
+      "highest_rank": 39,
+      "last_played_time_stamp": 1603620668,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2458551/1/æøå",
+          "name": "æøå#908",
+          "realm": 1,
+          "id": 2458551
+        },
+        "character_link": {
+          "id": 2458551,
+          "battle_tag": "hellzie#21314",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/hellzie-21314/2458551?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 18
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 5274873035294244864,
+      "current_rank": 57
+    },
+    {
+      "wins": 3,
+      "rating": 4467,
+      "previous_rank": 62,
+      "longest_win_streak": 2,
+      "losses": 4,
+      "join_time_stamp": 1601531507,
+      "points": 30,
+      "highest_rank": 41,
+      "last_played_time_stamp": 1603280103,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2530358/2/JonSnow",
+          "name": "JonSnow#266",
+          "realm": 2,
+          "id": 2530358
+        },
+        "character_link": {
+          "id": 2530358,
+          "battle_tag": "Смехоног#220954",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/%D0%A1%D0%BC%D0%B5%D1%85%D0%BE%D0%BD%D0%BE%D0%B3-220954/2530358?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "8seasonsobad",
+          "clan_tag": "Кing",
+          "id": 468916
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 7
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 2097583498184359936,
+      "current_rank": 58
+    },
+    {
+      "wins": 39,
+      "rating": 4410,
+      "previous_rank": 40,
+      "longest_win_streak": 4,
+      "losses": 34,
+      "join_time_stamp": 1601544482,
+      "points": 28,
+      "highest_rank": 9,
+      "last_played_time_stamp": 1602234940,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9432676/1/DodonMyHero",
+          "name": "DodonMyHero#195",
+          "realm": 1,
+          "id": 9432676
+        },
+        "character_link": {
+          "id": 9432676,
+          "battle_tag": "IgorDodon#2757",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/IgorDodon-2757/9432676?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 73
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7283196994124775424,
+      "current_rank": 59
+    },
+    {
+      "wins": 4,
+      "rating": 4585,
+      "previous_rank": 68,
+      "longest_win_streak": 3,
+      "losses": 4,
+      "join_time_stamp": 1601535481,
+      "points": 26,
+      "highest_rank": 58,
+      "last_played_time_stamp": 1603550477,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/183945/1/Wejdene",
+          "name": "Wejdene#942",
+          "realm": 1,
+          "id": 183945
+        },
+        "character_link": {
+          "id": 183945,
+          "battle_tag": "MjK#21661",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/MjK-21661/183945?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/3c63928c5f606614d6fda65f2d7b01dc2f0eb43c6e3fa9636c47037a591e1213.clfl",
+          "clan_name": "Gamisport",
+          "decal_url": "http://EU.depot.battle.net:1119/3c63928c5f606614d6fda65f2d7b01dc2f0eb43c6e3fa9636c47037a591e1213.clfl",
+          "clan_tag": "GAMI",
+          "id": 435426
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 8
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": "17087533382910345216",
+      "current_rank": 60
+    },
+    {
+      "wins": 43,
+      "rating": 4552,
+      "previous_rank": 0,
+      "longest_win_streak": 5,
+      "losses": 35,
+      "join_time_stamp": 1601531529,
+      "points": 24,
+      "highest_rank": 17,
+      "last_played_time_stamp": 1602018893,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8839162/1/Caedus",
+          "name": "Caedus#461",
+          "realm": 1,
+          "id": 8839162
+        },
+        "character_link": {
+          "id": 8839162,
+          "battle_tag": "DeadlyFeet#2125343",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/DeadlyFeet-2125343/8839162?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 78
+        }]
+      }],
+      "current_win_streak": 3,
+      "id": 6565435803512602624,
+      "current_rank": 61
+    },
+    {
+      "wins": 5,
+      "rating": 4444,
+      "previous_rank": 68,
+      "longest_win_streak": 2,
+      "losses": 3,
+      "join_time_stamp": 1603233815,
+      "points": 24,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603847399,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1487019/1/Quma",
+          "name": "Quma#927",
+          "realm": 1,
+          "id": 1487019
+        },
+        "character_link": {
+          "id": 1487019,
+          "battle_tag": "lennart#2217",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/lennart-2217/1487019?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/6b653df51ce512163d20fb668d1a01af26bed7e33101e2e5b730d0f8247840a7.clfl",
+          "clan_name": "Vollgas",
+          "decal_url": "http://EU.depot.battle.net:1119/554539dd99319accdc89550e80beb2a47f2dad25ed467f9c1394a9d44e68ef09.clfl",
+          "clan_tag": "Voll",
+          "id": 56600
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 8
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "12531870780453027840",
+      "current_rank": 62
+    },
+    {
+      "wins": 3,
+      "rating": 4461,
+      "previous_rank": 63,
+      "longest_win_streak": 1,
+      "losses": 4,
+      "join_time_stamp": 1601762463,
+      "points": 22,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603905338,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/11897/2/Tatarin",
+          "name": "Tatarin#441",
+          "realm": 2,
+          "id": 11897
+        },
+        "character_link": {
+          "id": 11897,
+          "battle_tag": "Tatarin#22589",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Tatarin-22589/11897?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 7
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "15020101877993832448",
+      "current_rank": 63
+    },
+    {
+      "wins": 1,
+      "rating": 4320,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 7,
+      "join_time_stamp": 1601528921,
+      "points": 16,
+      "highest_rank": 55,
+      "last_played_time_stamp": 1601873409,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/423166/1/IamDrizzt",
+          "name": "IamDrizzt#870",
+          "realm": 1,
+          "id": 423166
+        },
+        "character_link": {
+          "id": 423166,
+          "battle_tag": "Mariuslol#2470",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Mariuslol-2470/423166?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 8
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "14489800822847700992",
+      "current_rank": 64
+    },
+    {
+      "wins": 2,
+      "rating": 4398,
+      "previous_rank": 88,
+      "longest_win_streak": 1,
+      "losses": 1,
+      "join_time_stamp": 1601550769,
+      "points": 16,
+      "highest_rank": 89,
+      "last_played_time_stamp": 1604156729,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7408210/1/ThatGuy",
+          "name": "ThatGuy#395",
+          "realm": 1,
+          "id": 7408210
+        },
+        "character_link": {
+          "id": 7408210,
+          "battle_tag": "Player1050#2465",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Player1050-2465/7408210?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 3
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 6939516047561064448,
+      "current_rank": 65
+    },
+    {
+      "wins": 3,
+      "rating": 4394,
+      "previous_rank": 55,
+      "longest_win_streak": 2,
+      "losses": 2,
+      "join_time_stamp": 1601651903,
+      "points": 14,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602339461,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/4875609/1/MonsterMunch",
+          "name": "MonsterMunch#122",
+          "realm": 1,
+          "id": 4875609
+        },
+        "character_link": {
+          "id": 4875609,
+          "battle_tag": "Snorlax#2644",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Snorlax-2644/4875609?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 5
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 6078485193314795520,
+      "current_rank": 66
+    },
+    {
+      "wins": 2,
+      "rating": 4505,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 1,
+      "join_time_stamp": 1602856569,
+      "points": 14,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604181583,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8314937/1/ImissU",
+          "name": "ImissU#345",
+          "realm": 1,
+          "id": 8314937
+        },
+        "character_link": {
+          "id": 8314937,
+          "battle_tag": "ImissU#21747",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/ImissU-21747/8314937?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 3
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "12333985075732414464",
+      "current_rank": 67
+    },
+    {
+      "wins": 2,
+      "rating": 4445,
+      "previous_rank": 72,
+      "longest_win_streak": 2,
+      "losses": 3,
+      "join_time_stamp": 1603118880,
+      "points": 12,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1604006947,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2182665/1/FredTiffo",
+          "name": "FredTiffo#595",
+          "realm": 1,
+          "id": 2182665
+        },
+        "character_link": {
+          "id": 2182665,
+          "battle_tag": "StrSpaghetti#2328",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/StrSpaghetti-2328/2182665?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 5
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 8612322933664120832,
+      "current_rank": 68
+    },
+    {
+      "wins": 2,
+      "rating": 4421,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 1,
+      "join_time_stamp": 1601543975,
+      "points": 8,
+      "highest_rank": 46,
+      "last_played_time_stamp": 1603752752,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1019389/1/morg",
+          "name": "morg#649",
+          "realm": 1,
+          "id": 1019389
+        },
+        "character_link": {
+          "id": 1019389,
+          "battle_tag": "m0rg3n#2763",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/m0rg3n-2763/1019389?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 3
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": 3330725371153743872,
+      "current_rank": 69
+    },
+    {
+      "wins": 2,
+      "rating": 4426,
+      "previous_rank": 89,
+      "longest_win_streak": 1,
+      "losses": 4,
+      "join_time_stamp": 1601550867,
+      "points": 8,
+      "highest_rank": 90,
+      "last_played_time_stamp": 1604019552,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2389509/2/NoSmokingBro",
+          "name": "NoSmokingBro#508",
+          "realm": 2,
+          "id": 2389509
+        },
+        "character_link": {
+          "id": 2389509,
+          "battle_tag": "dedvasiliy#21971",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/dedvasiliy-21971/2389509?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 6
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "12415893194443587584",
+      "current_rank": 70
+    },
+    {
+      "wins": 9,
+      "rating": 4493,
+      "previous_rank": 0,
+      "longest_win_streak": 3,
+      "losses": 6,
+      "join_time_stamp": 1601547399,
+      "points": 6,
+      "highest_rank": 12,
+      "last_played_time_stamp": 1601569813,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1759277/2/Latteless",
+          "name": "Latteless#874",
+          "realm": 2,
+          "id": 1759277
+        },
+        "character_link": {
+          "id": 1759277,
+          "battle_tag": "Song#21277",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Song-21277/1759277?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 15
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 2974096575661342720,
+      "current_rank": 71
+    },
+    {
+      "wins": 1,
+      "rating": 4397,
+      "previous_rank": 96,
+      "longest_win_streak": 1,
+      "losses": 1,
+      "join_time_stamp": 1601849132,
+      "points": 6,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1602855149,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1464720/2/FergusBolter",
+          "name": "FergusBolter#756",
+          "realm": 2,
+          "id": 1464720
+        },
+        "character_link": {
+          "id": 1464720,
+          "battle_tag": "УФБЛСПР#2248",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/%D0%A3%D0%A4%D0%91%D0%9B%D0%A1%D0%9F%D0%A0-2248/1464720?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 2
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 5486545516315541504,
+      "current_rank": 72
+    },
+    {
+      "wins": 2,
+      "rating": 4417,
+      "previous_rank": 0,
+      "longest_win_streak": 2,
+      "losses": 0,
+      "join_time_stamp": 1603480761,
+      "points": 6,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603481831,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2743281/1/ZeeK",
+          "name": "ZeeK#720",
+          "realm": 1,
+          "id": 2743281
+        },
+        "character_link": {
+          "id": 2743281,
+          "battle_tag": "Zkay#1759",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Zkay-1759/2743281?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 2
+        }]
+      }],
+      "current_win_streak": 2,
+      "id": "16504329325793771520",
+      "current_rank": 73
+    },
+    {
+      "wins": 2,
+      "rating": 4475,
+      "previous_rank": 68,
+      "longest_win_streak": 2,
+      "losses": 3,
+      "join_time_stamp": 1601537715,
+      "points": 4,
+      "highest_rank": 45,
+      "last_played_time_stamp": 1603129272,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2473242/2/llllllllllll",
+          "name": "llllllllllll#16164",
+          "realm": 2,
+          "id": 2473242
+        },
+        "character_link": {
+          "id": 2473242,
+          "battle_tag": "licemer#21227",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/licemer-21227/2473242?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 5
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5200000691489210368,
+      "current_rank": 74
+    },
+    {
+      "wins": 1,
+      "rating": 4344,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 4,
+      "join_time_stamp": 1601545066,
+      "points": 4,
+      "highest_rank": 47,
+      "last_played_time_stamp": 1601763605,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/719882/1/AcieSs",
+          "name": "AcieSs#712",
+          "realm": 1,
+          "id": 719882
+        },
+        "character_link": {
+          "id": 719882,
+          "battle_tag": "OhM#2943",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/OhM-2943/719882?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 5
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "17166627851366039552",
+      "current_rank": 75
+    },
+    {
+      "wins": 1,
+      "rating": 4399,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 2,
+      "join_time_stamp": 1601546689,
+      "points": 4,
+      "highest_rank": 48,
+      "last_played_time_stamp": 1601548437,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1951897/1/Littlemaxy",
+          "name": "Littlemaxy#418",
+          "realm": 1,
+          "id": 1951897
+        },
+        "character_link": {
+          "id": 1951897,
+          "battle_tag": "Успешный#2658",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/%D0%A3%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D1%8B%D0%B9-2658/1951897?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 3
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "13565718474306617344",
+      "current_rank": 76
+    },
+    {
+      "wins": 0,
+      "rating": 4507,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601528156,
+      "points": 0,
+      "highest_rank": 54,
+      "last_played_time_stamp": 1601528156,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/700660/1/MiqueeNa",
+          "name": "MiqueeNa#187",
+          "realm": 1,
+          "id": 700660
+        },
+        "character_link": {
+          "id": 700660,
+          "battle_tag": "MiqueeNa#2780",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/MiqueeNa-2780/700660?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "Next level",
+          "clan_tag": "NXT",
+          "id": 14310
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "11175995922033147904",
+      "current_rank": 77
+    },
+    {
+      "wins": 0,
+      "rating": 4561,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601538119,
+      "points": 0,
+      "highest_rank": 60,
+      "last_played_time_stamp": 1603400026,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/481079/1/Boubou",
+          "name": "Boubou#989",
+          "realm": 1,
+          "id": 481079
+        },
+        "character_link": {
+          "id": 481079,
+          "battle_tag": "Boubou#2784",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Boubou-2784/481079?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 2461812118047948800,
+      "current_rank": 78
+    },
+    {
+      "wins": 0,
+      "rating": 4546,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601538182,
+      "points": 0,
+      "highest_rank": 62,
+      "last_played_time_stamp": 1601538182,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/5719018/1/Alexis",
+          "name": "Alexis#1673",
+          "realm": 1,
+          "id": 5719018
+        },
+        "character_link": {
+          "id": 5719018,
+          "battle_tag": "Alexis2b#2790",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Alexis2b-2790/5719018?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/f68274fc606bbf1a3dccc8c96ee34ba6e99907392046bf44b4dd7b2242e091ca.clfl",
+          "clan_name": "UNSC INFINITY LES DESTRUCTEURS",
+          "decal_url": "http://EU.depot.battle.net:1119/47844c87401d54392ad9b1fae12bd29748f6b0389b0abe762d0e4980b3b9d1ae.clfl",
+          "clan_tag": "EXPANT",
+          "id": 325060
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 9163449838551957504,
+      "current_rank": 79
+    },
+    {
+      "wins": 0,
+      "rating": 4438,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601540417,
+      "points": 0,
+      "highest_rank": 66,
+      "last_played_time_stamp": 1601540417,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1834814/2/HopeX",
+          "name": "HopeX#824",
+          "realm": 2,
+          "id": 1834814
+        },
+        "character_link": {
+          "id": 1834814,
+          "battle_tag": "APMKing#21757",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/APMKing-21757/1834814?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/ea13c4786fff5963d035bd40a1aff1302e74e4a992eca86c39d09de148d5bff5.clfl",
+          "clan_name": "Ukrainian Team",
+          "decal_url": "http://EU.depot.battle.net:1119/568cc610347c5e73a332aa358f75efc3e8bb2ecb0124553a1a041547df7c1f6d.clfl",
+          "clan_tag": "UATeam",
+          "id": 174625
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5201971016326184960,
+      "current_rank": 80
+    },
+    {
+      "wins": 0,
+      "rating": 4384,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601541841,
+      "points": 0,
+      "highest_rank": 69,
+      "last_played_time_stamp": 1601541841,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2085469/1/GUESH",
+          "name": "GUESH#250",
+          "realm": 1,
+          "id": 2085469
+        },
+        "character_link": {
+          "id": 2085469,
+          "battle_tag": "GUESH#2305",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/GUESH-2305/2085469?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/071854fa0ca066f339ff9ad116d367f536594ecad76440992e365d582e8e4d53.clfl",
+          "clan_name": "Propos décousus",
+          "decal_url": "http://EU.depot.battle.net:1119/e6fd57ed77530b4c2d46749f6c01153c223893d7fdcc575906771cac7936640a.clfl",
+          "clan_tag": "HUJA",
+          "id": 170751
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 1456664976214196224,
+      "current_rank": 81
+    },
+    {
+      "wins": 1,
+      "rating": 4447,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601542395,
+      "points": 0,
+      "highest_rank": 71,
+      "last_played_time_stamp": 1601542395,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1394853/1/ADAV",
+          "name": "ADAV#264",
+          "realm": 1,
+          "id": 1394853
+        },
+        "character_link": {
+          "id": 1394853,
+          "battle_tag": "Tempelheart#2822",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Tempelheart-2822/1394853?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/33515dd833da2b8cebd1c902a7228433fb518118be88f9c9526bdfa2e6818094.clfl",
+          "clan_name": "Balkan Bears",
+          "decal_url": "http://EU.depot.battle.net:1119/33515dd833da2b8cebd1c902a7228433fb518118be88f9c9526bdfa2e6818094.clfl",
+          "clan_tag": "BBSC2",
+          "id": 186074
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "15579953407648071680",
+      "current_rank": 82
+    },
+    {
+      "wins": 0,
+      "rating": 4372,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601542750,
+      "points": 0,
+      "highest_rank": 72,
+      "last_played_time_stamp": 1601542750,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1984846/2/Aivengo",
+          "name": "Aivengo#249",
+          "realm": 2,
+          "id": 1984846
+        },
+        "character_link": {
+          "id": 1984846,
+          "battle_tag": "A1veng0#2370",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/A1veng0-2370/1984846?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "10751813132130189312",
+      "current_rank": 83
+    },
+    {
+      "wins": 0,
+      "rating": 4446,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601544236,
+      "points": 0,
+      "highest_rank": 74,
+      "last_played_time_stamp": 1601544236,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3383114/1/JayKay",
+          "name": "JayKay#654",
+          "realm": 1,
+          "id": 3383114
+        },
+        "character_link": {
+          "id": 3383114,
+          "battle_tag": "JayKay#2770",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/JayKay-2770/3383114?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "16518109505024688128",
+      "current_rank": 84
+    },
+    {
+      "wins": 1,
+      "rating": 4442,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601544237,
+      "points": 0,
+      "highest_rank": 75,
+      "last_played_time_stamp": 1601544237,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/176507/1/Meddle",
+          "name": "Meddle#666",
+          "realm": 1,
+          "id": 176507
+        },
+        "character_link": {
+          "id": 176507,
+          "battle_tag": "Meddle#21986",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Meddle-21986/176507?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/bdb1e2183c2e0de7ea9ff6c393e4835aca2ba79c9f1da9a787a7414b12516f72.clfl",
+          "clan_name": "team pheenix",
+          "decal_url": "http://EU.depot.battle.net:1119/bdb1e2183c2e0de7ea9ff6c393e4835aca2ba79c9f1da9a787a7414b12516f72.clfl",
+          "clan_tag": "iX",
+          "id": 1838
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": "11113508477203382272",
+      "current_rank": 85
+    },
+    {
+      "wins": 1,
+      "rating": 4499,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601545778,
+      "points": 0,
+      "highest_rank": 77,
+      "last_played_time_stamp": 1601659673,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9146245/1/RandyRandom",
+          "name": "RandyRandom#978",
+          "realm": 1,
+          "id": 9146245
+        },
+        "character_link": {
+          "id": 9146245,
+          "battle_tag": "JayKay#21235",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/JayKay-21235/9146245?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 8232612090569818112,
+      "current_rank": 86
+    },
+    {
+      "wins": 1,
+      "rating": 4404,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601546039,
+      "points": 0,
+      "highest_rank": 79,
+      "last_played_time_stamp": 1602771225,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/1699788/2/ЭхоУнитаза",
+          "name": "ЭхоУнитаза#582",
+          "realm": 2,
+          "id": 1699788
+        },
+        "character_link": {
+          "id": 1699788,
+          "battle_tag": "Voorhees#2511",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Voorhees-2511/1699788?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 8449347822637023232,
+      "current_rank": 87
+    },
+    {
+      "wins": 0,
+      "rating": 4482,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601546813,
+      "points": 0,
+      "highest_rank": 81,
+      "last_played_time_stamp": 1604094283,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/8713547/1/LucaDsouplie",
+          "name": "LucaDsouplie#521",
+          "realm": 1,
+          "id": 8713547
+        },
+        "character_link": {
+          "id": 8713547,
+          "battle_tag": "LucaDsouply#2939",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/LucaDsouply-2939/8713547?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "11043702682979139584",
+      "current_rank": 88
+    },
+    {
+      "wins": 0,
+      "rating": 4542,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601548714,
+      "points": 0,
+      "highest_rank": 85,
+      "last_played_time_stamp": 1601548714,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/260152/1/Loy",
+          "name": "Loy#602",
+          "realm": 1,
+          "id": 260152
+        },
+        "character_link": {
+          "id": 260152,
+          "battle_tag": "Loy#2629",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Loy-2629/260152?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7010166266715439104,
+      "current_rank": 89
+    },
+    {
+      "wins": 0,
+      "rating": 4516,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601551784,
+      "points": 0,
+      "highest_rank": 95,
+      "last_played_time_stamp": 1601551784,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/5432080/1/gag",
+          "name": "gag#985",
+          "realm": 1,
+          "id": 5432080
+        },
+        "character_link": {
+          "id": 5432080,
+          "battle_tag": "Kickster#2495",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Kickster-2495/5432080?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "13713211362103001088",
+      "current_rank": 90
+    },
+    {
+      "wins": 0,
+      "rating": 4409,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601552128,
+      "points": 0,
+      "highest_rank": 98,
+      "last_played_time_stamp": 1601552128,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7851977/1/FailArazul",
+          "name": "FailArazul#921",
+          "realm": 1,
+          "id": 7851977
+        },
+        "character_link": {
+          "id": 7851977,
+          "battle_tag": "FailArazul#21551",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/FailArazul-21551/7851977?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Random",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "18110413448276869120",
+      "current_rank": 91
+    },
+    {
+      "wins": 1,
+      "rating": 4460,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601553017,
+      "points": 0,
+      "highest_rank": 99,
+      "last_played_time_stamp": 1602254176,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/794298/1/NervO",
+          "name": "NervO#457",
+          "realm": 1,
+          "id": 794298
+        },
+        "character_link": {
+          "id": 794298,
+          "battle_tag": "NerdFace#2579",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/NerdFace-2579/794298?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 3915348897781776384,
+      "current_rank": 92
+    },
+    {
+      "wins": 0,
+      "rating": 4426,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601583357,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603226140,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2019558/2/MarineRu",
+          "name": "MarineRu#763",
+          "realm": 2,
+          "id": 2019558
+        },
+        "character_link": {
+          "id": 2019558,
+          "battle_tag": "Пересвет#21289",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/%D0%9F%D0%B5%D1%80%D0%B5%D1%81%D0%B2%D0%B5%D1%82-21289/2019558?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "13398240863163777024",
+      "current_rank": 93
+    },
+    {
+      "wins": 0,
+      "rating": 4567,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601584974,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601584974,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/395104/1/Mazzuka",
+          "name": "Mazzuka#635",
+          "realm": 1,
+          "id": 395104
+        },
+        "character_link": {
+          "id": 395104,
+          "battle_tag": "Mazzuka#2654",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Mazzuka-2654/395104?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5763232119887233024,
+      "current_rank": 94
+    },
+    {
+      "wins": 0,
+      "rating": 4374,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1601705284,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601705284,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/6402315/1/Devitca",
+          "name": "Devitca#924",
+          "realm": 1,
+          "id": 6402315
+        },
+        "character_link": {
+          "id": 6402315,
+          "battle_tag": "Devitca#2512",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Devitca-2512/6402315?namespace=prod"}
+        },
+        "clan_link": {
+          "clan_name": "FXSports",
+          "clan_tag": "FXs",
+          "id": 2892
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "16705291464048902144",
+      "current_rank": 95
+    },
+    {
+      "wins": 1,
+      "rating": 4575,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 1,
+      "join_time_stamp": 1601767775,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601768403,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/3310725/1/Djorjx",
+          "name": "Djorjx#232",
+          "realm": 1,
+          "id": 3310725
+        },
+        "character_link": {
+          "id": 3310725,
+          "battle_tag": "Djorjx#2605",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Djorjx-2605/3310725?namespace=prod"}
+        },
+        "clan_link": {
+          "icon_url": "http://EU.depot.battle.net:1119/9968c39d32bd7919be409c00a1f63b7035ae59d6961800f020884fd30665587f.clfl",
+          "clan_name": "CocoCo",
+          "decal_url": "http://EU.depot.battle.net:1119/9968c39d32bd7919be409c00a1f63b7035ae59d6961800f020884fd30665587f.clfl",
+          "clan_tag": "CocoCo",
+          "id": 442123
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 2
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 5874979884664619008,
+      "current_rank": 96
+    },
+    {
+      "wins": 1,
+      "rating": 4560,
+      "previous_rank": 0,
+      "longest_win_streak": 1,
+      "losses": 0,
+      "join_time_stamp": 1601852860,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1601852860,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/9057332/1/OrisAVGN",
+          "name": "OrisAVGN#332",
+          "realm": 1,
+          "id": 9057332
+        },
+        "character_link": {
+          "id": 9057332,
+          "battle_tag": "Oris#21248",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Oris-21248/9057332?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Terran",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 1,
+      "id": 6208247356601663488,
+      "current_rank": 97
+    },
+    {
+      "wins": 0,
+      "rating": 4560,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1603094808,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603094808,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/2902554/1/YHWH",
+          "name": "YHWH#965",
+          "realm": 1,
+          "id": 2902554
+        },
+        "character_link": {
+          "id": 2902554,
+          "battle_tag": "coolB#2211",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/coolB-2211/2902554?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Protoss",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": 7652783534150516736,
+      "current_rank": 98
+    },
+    {
+      "wins": 0,
+      "rating": 4473,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1603537106,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603537106,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/397088/1/Loading",
+          "name": "Loading#405",
+          "realm": 1,
+          "id": 397088
+        },
+        "character_link": {
+          "id": 397088,
+          "battle_tag": "GodofChaos#2772",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/GodofChaos-2772/397088?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "17127231250231197696",
+      "current_rank": 99
+    },
+    {
+      "wins": 0,
+      "rating": 4553,
+      "previous_rank": 0,
+      "longest_win_streak": 0,
+      "losses": 1,
+      "join_time_stamp": 1603899813,
+      "points": 0,
+      "highest_rank": 100,
+      "last_played_time_stamp": 1603899813,
+      "ties": 0,
+      "member": [{
+        "legacy_link": {
+          "path": "/profile/7516187/1/Barcode",
+          "name": "Barcode#1634",
+          "realm": 1,
+          "id": 7516187
+        },
+        "character_link": {
+          "id": 7516187,
+          "battle_tag": "Future#21635",
+          "key": {"href": "https://eu.api.blizzard.com/data/sc2/character/Future-21635/7516187?namespace=prod"}
+        },
+        "played_race_count": [{
+          "race": "Zerg",
+          "count": 1
+        }]
+      }],
+      "current_win_streak": 0,
+      "id": "12270947875088760832",
+      "current_rank": 100
+    }
+  ],
+  "dateTimeCrawled": "2020-11-01T00:05:11.839",
+  "region": "eu",
+  "ladderId": 230998
+}

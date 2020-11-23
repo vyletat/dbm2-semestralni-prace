@@ -150,7 +150,7 @@ Podporuje import/export formátů, jako jsou např. tabulky programu Excel (.xls
  \hline
  GitHub hvězd & ~5 300 \\
  \hline
- Commity & cell8 \\
+ Commity & 2-3/týden \\
  \hline
  Návštěvnost & 2 mil./měsíc  \\
  \hline
@@ -370,23 +370,48 @@ Prvním dotazem vybereme pomocí Alasql atribut \textit{slots}, což je pole (do
 \begin{figure}[h]
     \centering
     \includegraphics[width=10cm]{R1}
-    \caption{Logo Výsledek dotazu Rohlik.cz - 1}
+    \caption{Výsledek dotazu Rohlik.cz - 1}
 \end{figure}
+\newpage
 
 \subsubsection{Kolik volných časových intervalů je k dispozici?}
 Tento dotaz je podobný jako první, akorát nechceme pouze najít první volné časové okénko, ale všechny v ten daný den. Tudíž v podmínce nebudeme chtít iteraci přerušit, ale pouze aby pokračovala a pokud tam je volné okénko, tak ho přičíst k nějakému counteru a vypsat pro jednotlivý den, výsledek je: 
 \begin{figure}[h]
     \centering
     \includegraphics[width=10cm]{R2}
-    \caption{Logo Výsledek dotazu Rohlik.cz - 2}
+    \caption{Výsledek dotazu Rohlik.cz - 2}
 \end{figure}
+\newpage
 
 \subsubsection{Jaké je nejbližší nejlevnější okno s volnou kapacitou?}
-TODO
+Tato otázka je podobná jako první, kdy chceme získat první volné okénko, ale k tomu ještě nejlevnější. K řešení musíme použít JSON, který není prémiový, jelikož prémiové členové mají dopravu zdarma. Postup je následující:
+\begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
+firstFreeDays = [];
+(alasql('SELECT slots FROM ?',[rohlikNormal.data.availabilityDays]).forEach(day => {
+    for (const [key, value] of Object.entries(day.slots)) {
+        const freeCapasity = (alasql('SELECT timeSlotCapacityDTO->totalFreeCapacityPercent AS freeCapacity FROM ?',[value]));
+        if (freeCapasity[0].freeCapacity > 0) {
+           firstFreeDays.push({od: value[0].since,
+                               do: value[0].till,
+                               price: value[0].price}) ;
+            break;
+        }
+    }
+}));
+lowPriceFree = alasql('SELECT * FROM ? WHERE price=(SELECT MIN(price) FROM ?)', [firstFreeDays, firstFreeDays]);
+console.log('Prvni nejlevnejsi okno je: od ' + lowPriceFree[0].od + ' do ' + lowPriceFree[0].do + ' s cenou ' + lowPriceFree[0].price + ' Kc.');
+\end{lstlisting}
+Nejdříve si založíme pole, kam budeme dávat volná okénka pro každý den. Postup je zde stejný jako u první otázky, akorát místo toho aby jsme okénko jen vypsali, uložíme si ho do pole. Po iteraci nad polem zavoláme dotaz, který nám vybere objekt s nejmenší cenou a ten si vypíšeme. Výsledek je takový:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{R3}
+    \caption{Výsledek dotazu Rohlik.cz - 3}
+\end{figure}
+\newpage
 
 \subsection{Starcraft}
 \subsubsection{Kolik hráčů je v jednotlivých divizích/úrovních?}
-V této otázce chceme najít celkový počet hráčů v divizi a v úrovni. Nejdříve vybereme všechny divize daného tieru, poté v každé divizi sečteme počet hráčů ve všech ladderech a nakonec vypíšeme. Vstupním parametrem je tier.
+V této otázce chceme najít celkový počet hráčů na úrovni a v jejích divizích. Nejdříve vybereme všechny divize dané úrovně, poté v každé divizi sečteme počet hráčů ve všech ladderech a nakonec obojí vypíšeme. Vstupním parametrem je tier.
 \begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
 function sumPlayersFromDivision(tier) {
     let counter = 0;
@@ -398,15 +423,16 @@ function sumPlayersFromDivision(tier) {
     console.log('Celkovy pocet hracu v tieru ' + tier.key.league_id + ' je ' + counter);
 }
 \end{lstlisting}
-Zřídíme si counter pro počet hráčů na úrovni. Dále si for cyklem spočítáme/vybereme počet hráčů pomocí funkce SUM() v každé divizi, index zde slouží pro iteraci mezi divizemi. Vypíšeme počet hráčů v divizi a přičteme do counteru. Za tělem cyklu vypíšeme count, který značí všechny hráče v úrovni. Výsledek je takový: 
+Zřídíme si counter pro počet hráčů na úrovni. Dále si for cyklem spočítáme/vybereme počet hráčů pomocí funkce SUM() v každé divizi, index zde slouží pro iteraci mezi divizemi. Vypíšeme počet hráčů v divizi a přičteme do counteru. Za tělem for cyklu vypíšeme count, který značí všechny hráče v úrovni. Výsledek je takový: 
 \begin{figure}[h]
     \centering
     \includegraphics[width=10cm]{S1}
     \caption{Výsledek dotazu Starcraft - 1}
 \end{figure}
+\newpage
 
 \subsubsection{Jsou konzistentní počty hráčů mezi JSON typ A a B?}
-V otázce nás zajímá, zda počet members\_count v JSONu typu A je stejný jako skutečný počet hráču v poli team v JSON typu B. V AlaSQL lze řešit tuto otázku pomocí jednoho volání v tvou dotazech. 
+V otázce nás zajímá, zda počet members\_count v JSONu typu A je stejný jako skutečný počet hráču v poli team v JSON typu B. V AlaSQL lze řešit tuto otázku pomocí jednoho volání s dvěma dotazy. 
 \begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
 function ladderMemberCountConsist(tier, ladderId) {
     count = alasql('SELECT member_count FROM ? WHERE ladder_id= ?;SELECT COUNT(*) AS member_count FROM ?', [tier.tier[0].division, ladderId, ladder230898_1031.team])
@@ -414,16 +440,18 @@ function ladderMemberCountConsist(tier, ladderId) {
     console.log('Jsou pocty hracu konzisteni? - ' + (count[0][0].member_count === count[1][0].member_count ? 'ano.' : 'ne.'));
 }
 \end{lstlisting}
-Určím si id ladderu, který mě zajímá a ten naleznu V JSONu typu a pomocí kauzule WHERE a vyberu member\_count. V druhém dotazu si spočtu pomocí COUNT() počet záznamů v poli team a vypíši. Pro výpis ještě použiji podmínku if, která výsledek vypíše slovně.
-Ladder zde musí být vložen manuálně, jelikož nepracuji se souborovým systémem, řešením by bylo procházet složku s daty a hledat soubor s id daného ladderu nebo mít laddery v jednom souboru a použít JOIN. Výsledkem ladderu s id 230898 je:
+Určím si id ladderu, který mě zajímá a ten naleznu V JSONu typu A pomocí kauzule WHERE a vyberu member\_count. Je zde ale problém, že musím přímo zadat index division, ve kterém se ladder nachází. Tento problém blíže popisuji v kapitole \hyperlink{Error}{Chyby}, jelikož knihovna neumí 2x iterovat. Také se musí přidat ladder (JSON typu B).
+V druhém dotazu si spočtu pomocí COUNT() počet záznamů v poli team a vypíši. Pro výpis ještě použiji podmínku if, která výsledek vypíše slovně.
+Ladder zde musí být vložen manuálně, jelikož nepracuji se souborovým systémem, řešením by bylo procházet složku s daty a hledat soubor s id daného ladderu. Výsledkem ladderu s id 230898 je:
 \begin{figure}[h]
     \centering
     \includegraphics[width=5cm]{S2}
     \caption{Výsledek dotazu Starcraft - 2}
 \end{figure}
+\newpage
 
 \subsubsection{Seřazení hráčů v rámci jednoho ladderu.}
-S touto otázkou si knihovna poradí celkem snadno (bez pouřití JavaScriptu), pokud chceme seřadit hráče v jednom ladderu a známe id tohoto ladderu. S přiloženými daty si například vezmeme soubor \textit{ladders-eu-230898.json}, což je ladder s \textit{ladder\_id=230898} a pomocí JS můžeme přistupovat k jeho atributům. Všechny hráči daného ladderu jsou uložené v poli \textit{team}. Chceme zobrazit id hráče, k případnému dalšímu dotazování, jméno hráče a rating, což bude seřazená hodnota. Vytvoříme si AlaSQL dotaz:
+S touto otázkou si knihovna poradí celkem snadno (bez použití JavaScriptu), pokud chceme seřadit hráče v jednom ladderu a známe id tohoto ladderu. S přiloženými daty si například vezmeme soubor \textit{ladders-eu-230898.json}, což je ladder s \textit{ladder\_id=230898} a pomocí JS můžeme přistupovat k jeho atributům. Všechny hráči daného ladderu jsou uložené v poli \textit{team}. Chceme zobrazit id hráče, k případnému dalšímu dotazování, jméno hráče a rating, což bude seřazená hodnota. Vytvoříme si AlaSQL dotaz:
 \begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
 function orderPlayersFromLadder(ladderJson) {
     console.log(alasql('SELECT id, rating, member->(0)->character_link->battle_tag AS battle_tag FROM ? ORDER BY rating DESC', [ladderJson.team]));
@@ -431,14 +459,13 @@ function orderPlayersFromLadder(ladderJson) {
 \end{lstlisting}
 Vybereme všechny zmíněné atributy. Atribut jména hráče je zanořený, proto musíme volit přístup přes další atributy nebo pole a zobrazíme ho jako battle\_tag, jinak by se celý atribut nazýval podle cesty, které k němu přistupujeme (v tomto případě by se vybraný atribut jmenoval 'member->(0)->character\_link->battle\_tag'). 
 Vybraná data můžeme seřadit podle atributu \textit{rating}, pomocí výrazu ORDER BY sestupně nebo vzestupně. Jako výsledek dotazu nad ladderem s ladder\_id=230898 nám dotaz sestrojí následující výsledek:
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=10cm]{S3}
-    \caption{Logo Výsledek dotazu Starcraft - 3}
+    \caption{Výsledek dotazu Starcraft - 3}
 \end{figure}
-
 Jediné na co jsem během tohoto dotazu narazil je, že jsem chtěl, aby si uživatel volil metodu seřazení, jestli ASC nebo DESC přes placeholder pomocí ?, bohužel ale při překladu aplikace padala a vyžadovala již definovanou metodu seřazení vloženou přímo jako string v dotazu.
+\newpage
 
 \subsubsection{Kolik hráčů odehrálo v poslední době nějakou hru?}
 K tomuto dotazu knihovně opět postačí pouze jeden dotaz, se dvěma vstupními parametry, které nahradíme místo placeholderů a to určitý ladder a konstanta času v ms proti které budeme hráče porovnávat. Alasql dotaz je:
@@ -448,12 +475,12 @@ function lastPlayedFrom(ladderJson, timeFromInMilis) {
 }
 \end{lstlisting}
 Chceme zobrazit číslo, tedy počet hráčů, kolik hrálo Starcraft od časové značky. Použijeme agregační funkci COUNT buď s nějakým atributem nebo hvězdičkou, což je v tomto případě jedno. Musíme přidat také klauzuli WHERE a říci, že hledáme hráče, kteří mají \textit{last\_played\_time\_stamp} větší než naše časové razítko. Výsledkem dotazu je:
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=5cm]{S5}
-    \caption{Logo Výsledek dotazu Starcraft - 5}
+    \caption{Výsledek dotazu Starcraft - 5}
 \end{figure} 
+\newpage
 
 \subsubsection{Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy?}
 Tento dotaz jsem se snažil vyřešit pouze s pomocí Alasql, ale k výsledku jsem se dobral pouze s pomocí JavaScriptu. Vstupním parametrem je jeden ladder.
@@ -477,8 +504,9 @@ Nejdříve inicializuji prázdný string, který mi bude pomáhat s vypsáním v
 \begin{figure}[h]
     \centering
     \includegraphics[width=5cm]{S6}
-    \caption{Logo Výsledek dotazu Starcraft - 6}
+    \caption{Výsledek dotazu Starcraft - 6}
 \end{figure} 
+\newpage
 
 \subsubsection{Jací hráči přibyli/ubyli v daných ladderech?}
 V tomto dotazu chceme porovnat dvě instance stejného ladderu v jiných časových obdobích, tudíž vstupem budou dva zmíněné parametry. Tímto dotazem si Alasql poradí pomocí dvou dotazů nebo jedním zanořeným: 
@@ -489,12 +517,12 @@ function compareLaddersByPlayers(ladderJson1, ladderJson2) {
 }
 \end{lstlisting}
 Prvním krokem se sestavení UNION výroku, který vezme z obou instancí battle\_tag hráčů jako \textit{name} a vytvoří z nich pouze jednu tabulku. Nad touto tabulkou zobrazíme pouze ty hráče, kteří se v obou instancích nacházejí pouze jednou. Nevíme ale, jestli daní hráči přibili nebo ubyli. Výsledek dotazů mezi ladderem s ladder\_id=230882 je:
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=5cm]{S7}
-    \caption{Logo Výsledek dotazu Starcraft - 7}
+    \caption{Výsledek dotazu Starcraft - 7}
 \end{figure} 
+\newpage
 
 \subsubsection{Jací hráči vybočují z hranic divizí?}
 V dotazu chceme nalézt všechny hráče, kteří patří do jedné divize. Toho docílíme nalezením všech ladderů dané divize. Také potřebujeme získat ELO rozsah dané divize pomocí ukazatelů min\_rating a max\_rating. Až budeme mít všechny hráče z ladderů dané divize, lze jednoduše podle jejich ratingu vyfiltrovat hráče, kteří do rozsahu divize nezapadají. 
@@ -510,14 +538,15 @@ function playersElo(tier, divisionId) {
 \end{lstlisting}
 Naleznu divizi nebo divize určitého tieru a vyberu min/max každé úrovně, také pole division se všemi laddery kvůli jejich id. Dalším krokem je nalezení všech ladderů z divize. 
 
-V semestrální nepracuji se souborovým systémem a musel bych každý ladder zadat manuálně. Tento krok by šel udělat např. vybrat všechny souborů na základě ladder\_id a načíst je pro další zpracování nebo z jednoho velkého souboru ladderů vybrat ty, které mají stejné id (což by bylo asi časově náročnější). Bohužel v takovém případě nelze udělat JOIN (více tento problém popisuji v kapitole Chyby), důvodem je, že pracujeme nad JSON souborem a ne nad tabulkou - nemáme název tabulky.
+V semestrální nepracuji se souborovým systémem a musel bych každý ladder zadat manuálně. Tento krok by šel udělat např. vybrat všechny souborů na základě ladder\_id a načíst je pro další zpracování nebo z jednoho velkého souboru ladderů vybrat ty, které mají stejné id (což by bylo asi časově náročnější). Bohužel v takovém případě nelze udělat JOIN (více tento problém popisuji v kapitole \hyperlink{Error}{Chyby}), důvodem je, že pracujeme nad JSON souborem a ne nad tabulkou - nemáme název tabulky.
 
 Nakonec pro každý ladder vypíšeme name a rating hráčů, kteří nejsou v rozsahu min\_rating a max\_rating divize. Toho docílíme pomocí NOT BETWEEN operátoru. Dané hráče vypíšeme. Výsledek pro jeden ladder je: 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=5cm]{S7}
-    \caption{Logo Výsledek dotazu Starcraft - 7}
+    \includegraphics[width=5cm]{S4}
+    \caption{Výsledek dotazu Starcraft - 4}
 \end{figure} 
+\newpage
 
 \subsubsection{Kolik zástupců mají týmy v jednotlivých úrovních?}
 Tento dotaz je postupem velice podobný tomu předešlému, musíme nalézt všechny teamy, které jsou v dané diviti a spočítat počet jejich členů. Prvním krokem je výběr divize a nalezení všech ladderů daných divizí v úrovni. Poté získáme všechny clan\_tagy (předpokládám, že funguje jako jednoznačný identifikátor). Po získání všech clan\_tagu necháme je sloučit a sečíst, kolikrát se vyskytují, tím získáme počet hráčů. Jako vstupní parametr nám tedy stačí úroveň. 
@@ -549,13 +578,12 @@ V prvním kroku vybereme všechny divize úrovně a k nim dané laddery. Tento k
 V tomto kroku je také problém jako u minulé otázky, jak vybrat všechny laddery na základě id? Problém a postupy jsem popisoval u předchozí otázky, tudíž to sem nebudu psát znovu. 
 Nad každým ladderem vybereme clan\_tag (které jsou v JSON souborech typu B pod každým hráčem) a počet hráčů pomocí metody COUNT(). Navíc s využitím GROUP BY si vybereme všechny týmy jen jednou.
 Po té co máme takto zpracované všechny laddery dané úrovně, můžeme je grupovat podle jejich tagu a pomocí agregační metody SUM sečíst výskyt hráčů. V datech se vyskytují hráči, kteří žádný tým nemají, v zadání otázky se na to netážeme, ale pro informaci se může hodit znát. Jako výstup ukíži pouze část výsledků ze 3 ladderů:
-\newpage
 \begin{figure}[h]
     \centering
     \includegraphics[width=5cm]{S8}
     \caption{Výsledek dotazu Starcraft - 8}
 \end{figure} 
-
+\newpage
 
 \subsection{Objevené zajímavé funkce}
 \subsubsection*{Placeholder}
@@ -608,6 +636,7 @@ První funkce \textit{value()} vykoná dotaz, ale místo objektu nebo více hodn
 
 \section{Chyby}
 \subsection{Procházení zanořených objektů}
+\hypertarget{Error}
 Jako největší chybou nebo nedostatkem jsem se potýkal s problémem, že knihovna nedokáže procházet přes zanořený JSON pomocí jednoho dotazu. Představme si, že máme pole měst a v každém městě je ještě pole okrsků, pokud by jsme chtěli chtěli zjistit/vypsat např. všechny názvy okrsků, šli by jsme na to v AlaSQL nějak takto:
 \begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
 alasql('SELECT okrsky->name FROM (SELECT okrsky FROM ? WHERE name LIKE 'Praha'), [mesta]);
@@ -629,7 +658,11 @@ Další nesnází je nefunkčnost některých metod, které tvůrci uvádějí v
 Funkce nešli, ani když jsem měl nejnovější verzi knihovny.
 
 \subsection{JOIN}
-Funkce JOIN zde existuje a funguje, tudíž bych nechtěl říkat, že je to chyba, ale funguje pouze s vytvořenými tabulkami které máte pojmenované, JSON soubory, které zadáváte přes placeholder bohužel nelze joinovat, jelikož postrádají název.
+Funkce JOIN zde existuje a funguje, tudíž bych nechtěl říkat, že je to chyba, ale funguje pouze s vytvořenými tabulkami které máte pojmenované, JSON soubory, které zadáváte přes placeholder bohužel nelze joinovat, jelikož postrádají název. Jako příklad použití JOINu mohu uvést:
+\begin{lstlisting}[language=JavaScript][caption=My Javascript Example]
+alasql('SELECT city.*, country.* FROM city JOIN country USING countryid');
+alasql('SELECT * FROM Cities JOIN Countries USING Country');
+\end{lstlisting}
 
 \section{Popis přiložených souborů}
 K této dokumentaci také přikládám soubory s příklady a s řešením popsaných otázek. Struktura zip souboru je následující. Po rozbalení je zde jedna složka ..., která je jako root složka projektu v ní se nacházejí složky \textit{dokumetace} - obsahuje dokumentaci ve formátu .pdf, \textit{main} - obsahující HTML a JavaScript soubory a složku \textit{data} - obsahující data poskytnutá k této semestrální práci. pokud půjdeme do složky \textit{main} najdeme zde složky  \textit{data} - která obsahuje některá z poskytnutých dat převedená do JavaScriptu, \textit{js} - obsahující hlavní soubory s kódem a řešení. V main složce jsou také tři HTML soubory, které po otevření v některém z prohlížečů a otevření záložky Console v DevToolu prohlížeče najdete vypsané všechny výsledky dotazů. 
@@ -637,7 +670,7 @@ K této dokumentaci také přikládám soubory s příklady a s řešením popsa
 \section{Porovnání s SQL}
 Knihovna je primárně navržena aby se s ní co nejvíce pracovalo jako s SQL. Obsahuje všechny základní výroky (SELECT, DISTINC, FIRST, FROM, WHERE, ORDER BY, atd.) agregační funkce (SUM(), AVG(), GROUP BY(), atd.), stringové, numerické, logické a datové funkce (ABS(), UPPER(), YEAR(), ...), JOIN operace (INNER JOIN, LEFT JOIN, OUTER JOIN, ...) a řízení transakcí příkazy (BEGIN, COMMIT a ROLLBACK). 
 
-Jak jsem již zmínil v úvodu, knihovna implementuje mnoho funkcí ze čtvrté verze jazyka SQL (SQL:1999). Přehled, co všechno knihovna podporuje, lze nalézt \url{https://github.com/agershun/alasql}{zde}.  
+Jak jsem již zmínil v úvodu, knihovna implementuje mnoho funkcí ze čtvrté verze jazyka SQL (SQL:1999). Přehled, co všechno knihovna podporuje, lze nalézt \href{https://github.com/agershun/alasql}{zde}.  
 
 Pokud si vytvoříte databázi pomocí Alasql, chová se stejně jako SQL databáze, akorát ukládání dat je jiné. Data jsou uložené v JavaScriptovém objektu a máme k nim přístup i bez dotazovacího jazyka přes objektovou cestu. Data je možné ukládat i do Localstorage nebo jiné podporované databáze.
 
@@ -650,7 +683,15 @@ Na druhou stranu, knihovna nabízí opravdu mnoho zajímavých funkcí a pomocí
 
 Když jsem vybíral tuto knihovnu, knihovna mě velice zajímala a myslel jsem si, že práce s JSONem nebude problém, bohužel jak jsem začal na semestrální práci pracovat, zjišťoval jsem, že knihovna je spíše založená pro správu relační databáze a úschovu vlastních dat do \textit{LocalStorage} prohlížeče a transformace dat z tabulkových (xls, csv) souborů. Není to přímo určena pro zpracování JSONů, ale základní zpracování umožňuje.
 
+V poslední řadě bych chtěl zmínit špatné chybové hlášky, kdy jsem nevěděl co takový hláška říká. Mnohdy se vám vypíší jen písmenka a pokud nemáte nastudovanou přímo scripty knihovny, tak nevíte, proč to padá. Jako příklad uvádím:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{error}
+    \caption{Příklad vyhozené chybové hlášky}
+\end{figure}
 
+
+\newpage
 \begin{thebibliography}{9}
 \bibitem{notsoshort}
 \textit{Github - AlaSQL} [online]. [cit. 2020-11-16]. Dostupné z: 

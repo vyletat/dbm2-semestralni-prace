@@ -1,0 +1,17 @@
+{
+  "tier": [{
+    "division": [{
+      "ladder_id": 231747,
+      "id": 1,
+      "member_count": 198
+    }],
+    "id": 0
+  }],
+  "_links": {"self": {"href": "https://eu.api.blizzard.com/data/sc2/league/45/201/0/6?namespace=prod"}},
+  "key": {
+    "season_id": 45,
+    "team_type": 0,
+    "league_id": 6,
+    "queue_id": 201
+  }
+}

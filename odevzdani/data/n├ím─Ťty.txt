@@ -1,0 +1,47 @@
+rohlikX.json
+---------------------
+JSON odpověď na dotaz s dostupností dovážkové služby. V odpovědi jsou jednotlivá hodinová okna ve 4 nejbližších dnech.
+U každého okna je informace o obsazenosti "totalFreeCapacityPercent", základní ceně dovozu "price" a
+strukturovaný rozpis času "interval". V souboru 1 je pohled na data z pohledu premium účtů, v souboru 2 je pohled
+na tu samou adresu z pohledu obyčejného účtu.
+
+Možné otázky:
+* Jaké je nejbližší okno s volnou kapacitou?
+* Kolik volných časových intervalů je k dispozici? 
+* Jaké je nejbližší nejlevnější okno s volnou kapacitou?
+* Jak se změnila kapacita mezi dvěmi pozorováními? (hypotetický scénář; zapomněl jsem si uložit JSON ze včera,
+takže data by bylo potřeba vhodně nasimulovat)
+
+
+
+Starcraft 2
+---------------------
+Vybraná minimalistická podmnožina dat popisujících hráče a jejich aktuální umístění na ladderu/žebříčku/leaderboardu.
+V tomto případě je žebříček strukturovaný do několika úrovní (tier) (6 = nejvyšší, 0 = nejnižší).
+Každá úroveň (0-5) je dále členěná na 3 podúrovně (divize). Do každé divize spadá různý počet tzv. ladderů,
+což je množina maximálně 100 hráčů (pro úrovně 0-5), resp. 200 hráčů (úroveň 6).
+
+2 typy JSON souborů:
+A) ladders-eu-45-x.json - popisuje strukturu divizí a odkazy na jednotlivé laddery.
+B) ladders-eu-xxxxxx.json - popisuje množinu hráčů a jejich aktuální výsledky a metadata.
+
+Pro zjednodušení přikládám pouze informace o úrovních 5 a 6, tj. dvou nejvyšších. Úroveň 6 má pouze jeden ladder
+ o 200 hráčích (ladder_id 231747), z úrovně 5 jsem vždy vybral první 2 laddery v seznamu pro každou divizi.
+ Data nabízím získaná ve dvou různých dnech.
+
+Možné otázky:
+* Kolik hráčů je v jednotlivých divizích/úrovních? (dle JSONů typu A - "member_count")
+* Jsou konzistentní počty hráčů mezi JSON typ A a B? ("member_count" v A vs "team" v B)
+* Seřazení hráčů v rámci jednoho ladderu (resp. přes množinu ladderů) dle ELO ("team -> rating").
+* Jací hráči vybočují z hranic divizí? (tj. mají ELO jiné než z rozsahu "min_rating" - "max_rating" v A)
+* Kolik hráčů odehrálo v poslední době nějakou hru? (porovnání "last_played_time_stamp" vůči konstantě např.)
+* Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy ("battle_tag" slouží jako identifikátor účtu,
+"played_race_count -> race" poskytuje info o herní rase)
+* Jací hráči přibyli/ubyli v daných ladderech (srovnání stavů v 20201031 a 20201001)
+* Kolik zástupců mají týmy v jednotlivých úrovních ("member -> clan_link" je info o týmu hráče) (info o úrovni ladderu
+lze získat v JSONu B v "league->league_key->league_id")
+
+
+
+p.s. pokud byste chtěli zkoušet kromě funkionality i kapacitu, resp. zátěž při větších objemech, mohu poskytnout
+kompletní data (~1600 souborů, 170MB per den).
