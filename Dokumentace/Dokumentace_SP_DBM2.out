@@ -1,37 +1,42 @@
 \BOOKMARK [1][-]{section.1}{Knihovna AlaSQL}{}% 1
-\BOOKMARK [1][-]{section.2}{Stack}{}% 2
-\BOOKMARK [1][-]{section.3}{Instalace}{}% 3
-\BOOKMARK [1][-]{section.4}{Pou\236it\355}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Pomoc\355 funkce}{section.4}% 5
-\BOOKMARK [3][-]{subsubsection.4.1.1}{NodeJS}{subsection.4.1}% 6
-\BOOKMARK [2][-]{subsection.4.2}{Nov\341 datab\341ze}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.3}{Nov\341 tabulka}{section.4}% 8
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Datov\351 typy}{subsection.4.3}% 9
-\BOOKMARK [2][-]{subsection.4.4}{Manipulace dat v tabulce}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.5}{Nac\355t\341n\355 souboru}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Synchronn\355/Asynchronn\355 pr\355stup}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{HTML}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{SQL dotazy}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Nejl\351pe funguje s JS}{section.6}% 15
-\BOOKMARK [1][-]{section.7}{Datasety}{}% 16
-\BOOKMARK [2][-]{subsection.7.1}{Rohl\355k.cz}{section.7}% 17
-\BOOKMARK [2][-]{subsection.7.2}{Starcraft}{section.7}% 18
-\BOOKMARK [1][-]{section.8}{Dule\236it\341 je cesta, ne c\355l}{}% 19
-\BOOKMARK [2][-]{subsection.8.1}{Rohl\355k.cz}{section.8}% 20
-\BOOKMARK [3][-]{subsubsection.8.1.1}{Jak\351 je nejbli\236\235\355 okno s volnou kapacitou?}{subsection.8.1}% 21
-\BOOKMARK [3][-]{subsubsection.8.1.2}{Kolik voln\375ch casov\375ch intervalu je k dispozici?}{subsection.8.1}% 22
-\BOOKMARK [3][-]{subsubsection.8.1.3}{Jak\351 je nejbli\236\235\355 nejlevnej\235\355 okno s volnou kapacitou?}{subsection.8.1}% 23
-\BOOKMARK [2][-]{subsection.8.2}{Starcraft}{section.8}% 24
-\BOOKMARK [3][-]{subsubsection.8.2.1}{Kolik hr\341cu je v jednotliv\375ch diviz\355ch/\372rovn\355ch?}{subsection.8.2}% 25
-\BOOKMARK [3][-]{subsubsection.8.2.2}{Jsou konzistentn\355 pocty hr\341cu mezi JSON typ A a B?}{subsection.8.2}% 26
-\BOOKMARK [3][-]{subsubsection.8.2.3}{Serazen\355 hr\341cu v r\341mci jednoho ladderu.}{subsection.8.2}% 27
-\BOOKMARK [3][-]{subsubsection.8.2.4}{Jac\355 hr\341ci vybocuj\355 z hranic diviz\355?}{subsection.8.2}% 28
-\BOOKMARK [3][-]{subsubsection.8.2.5}{Kolik hr\341cu odehr\341lo v posledn\355 dobe nejakou hru?}{subsection.8.2}% 29
-\BOOKMARK [3][-]{subsubsection.8.2.6}{Jac\355 hr\341ci jsou v jednom ladderu v\355cekr\341t a za jak\351 rasy?}{subsection.8.2}% 30
-\BOOKMARK [3][-]{subsubsection.8.2.7}{Jac\355 hr\341ci pribyli/ubyli v dan\375ch ladderech?}{subsection.8.2}% 31
-\BOOKMARK [3][-]{subsubsection.8.2.8}{Kolik z\341stupcu maj\355 t\375my v jednotliv\375ch \372rovn\355ch?}{subsection.8.2}% 32
-\BOOKMARK [2][-]{subsection.8.3}{Objeven\351 zaj\355mav\351 funkce}{section.8}% 33
-\BOOKMARK [1][-]{section.9}{Chyby}{}% 34
-\BOOKMARK [1][-]{section.10}{Popis prilo\236en\375ch souboru}{}% 35
-\BOOKMARK [1][-]{section.11}{Porovn\341n\355 s SQL}{}% 36
-\BOOKMARK [1][-]{section.12}{Na z\341ver}{}% 37
+\BOOKMARK [2][-]{subsection.1.1}{Infobox}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{U\236itecn\351 odkazy}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Stack}{}% 4
+\BOOKMARK [1][-]{section.3}{Instalace}{}% 5
+\BOOKMARK [1][-]{section.4}{Pou\236it\355}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Pomoc\355 funkce}{section.4}% 7
+\BOOKMARK [3][-]{subsubsection.4.1.1}{NodeJS}{subsection.4.1}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Nov\341 datab\341ze}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Nov\341 tabulka}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Datov\351 typy}{subsection.4.3}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Manipulace dat v tabulce}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.5}{Nac\355t\341n\355 souboru}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Synchronn\355/Asynchronn\355 pr\355stup}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{HTML}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{SQL dotazy}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{Nejl\351pe funguje s JS}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{Datasety}{}% 18
+\BOOKMARK [2][-]{subsection.7.1}{Rohl\355k.cz}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.2}{Starcraft}{section.7}% 20
+\BOOKMARK [1][-]{section.8}{Dule\236it\341 je cesta, ne c\355l}{}% 21
+\BOOKMARK [2][-]{subsection.8.1}{Rohl\355k.cz}{section.8}% 22
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Jak\351 je nejbli\236\235\355 okno s volnou kapacitou?}{subsection.8.1}% 23
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Kolik voln\375ch casov\375ch intervalu je k dispozici?}{subsection.8.1}% 24
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Jak\351 je nejbli\236\235\355 nejlevnej\235\355 okno s volnou kapacitou?}{subsection.8.1}% 25
+\BOOKMARK [2][-]{subsection.8.2}{Starcraft}{section.8}% 26
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Kolik hr\341cu je v jednotliv\375ch diviz\355ch/\372rovn\355ch?}{subsection.8.2}% 27
+\BOOKMARK [3][-]{subsubsection.8.2.2}{Jsou konzistentn\355 pocty hr\341cu mezi JSON typ A a B?}{subsection.8.2}% 28
+\BOOKMARK [3][-]{subsubsection.8.2.3}{Serazen\355 hr\341cu v r\341mci jednoho ladderu.}{subsection.8.2}% 29
+\BOOKMARK [3][-]{subsubsection.8.2.4}{Kolik hr\341cu odehr\341lo v posledn\355 dobe nejakou hru?}{subsection.8.2}% 30
+\BOOKMARK [3][-]{subsubsection.8.2.5}{Jac\355 hr\341ci jsou v jednom ladderu v\355cekr\341t a za jak\351 rasy?}{subsection.8.2}% 31
+\BOOKMARK [3][-]{subsubsection.8.2.6}{Jac\355 hr\341ci pribyli/ubyli v dan\375ch ladderech?}{subsection.8.2}% 32
+\BOOKMARK [3][-]{subsubsection.8.2.7}{Jac\355 hr\341ci vybocuj\355 z hranic diviz\355?}{subsection.8.2}% 33
+\BOOKMARK [3][-]{subsubsection.8.2.8}{Kolik z\341stupcu maj\355 t\375my v jednotliv\375ch \372rovn\355ch?}{subsection.8.2}% 34
+\BOOKMARK [2][-]{subsection.8.3}{Objeven\351 zaj\355mav\351 funkce}{section.8}% 35
+\BOOKMARK [1][-]{section.9}{Chyby}{}% 36
+\BOOKMARK [2][-]{subsection.9.1}{Proch\341zen\355 zanoren\375ch objektu}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.2}{Nefunkcn\355}{section.9}% 38
+\BOOKMARK [2][-]{subsection.9.3}{JOIN}{section.9}% 39
+\BOOKMARK [1][-]{section.10}{Popis prilo\236en\375ch souboru}{}% 40
+\BOOKMARK [1][-]{section.11}{Porovn\341n\355 s SQL}{}% 41
+\BOOKMARK [1][-]{section.12}{Na z\341ver}{}% 42

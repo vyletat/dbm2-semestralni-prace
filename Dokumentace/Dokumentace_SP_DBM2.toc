@@ -1,38 +1,43 @@
 \babel@toc {czech}{}
-\contentsline {section}{\numberline {1}Knihovna AlaSQL}{3}{section.1}%
-\contentsline {section}{\numberline {2}Stack}{4}{section.2}%
-\contentsline {section}{\numberline {3}Instalace}{4}{section.3}%
-\contentsline {section}{\numberline {4}Použití}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Pomocí funkce}{4}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}NodeJS}{4}{subsubsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.2}Nová databáze}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Nová tabulka}{5}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Datové typy}{5}{subsubsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.4}Manipulace dat v tabulce}{6}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Načítání souborů}{7}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Synchronní/Asynchronní přístup}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}HTML}{8}{subsection.5.1}%
-\contentsline {section}{\numberline {6}SQL dotazy}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Nejlépe funguje s JS}{8}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Datasety}{8}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Rohlík.cz}{8}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Starcraft}{9}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Důležitá je cesta, ne cíl}{9}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Rohlík.cz}{9}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Jaké je nejbližší okno s volnou kapacitou?}{9}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Kolik volných časových intervalů je k dispozici?}{10}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Jaké je nejbližší nejlevnější okno s volnou kapacitou?}{10}{subsubsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.2}Starcraft}{11}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Kolik hráčů je v jednotlivých divizích/úrovních?}{11}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Jsou konzistentní počty hráčů mezi JSON typ A a B?}{11}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Seřazení hráčů v rámci jednoho ladderu.}{11}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Jací hráči vybočují z hranic divizí?}{11}{subsubsection.8.2.4}%
-\contentsline {subsubsection}{\numberline {8.2.5}Kolik hráčů odehrálo v poslední době nějakou hru?}{11}{subsubsection.8.2.5}%
-\contentsline {subsubsection}{\numberline {8.2.6}Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy?}{12}{subsubsection.8.2.6}%
-\contentsline {subsubsection}{\numberline {8.2.7}Jací hráči přibyli/ubyli v daných ladderech?}{13}{subsubsection.8.2.7}%
-\contentsline {subsubsection}{\numberline {8.2.8}Kolik zástupců mají týmy v jednotlivých úrovních?}{13}{subsubsection.8.2.8}%
-\contentsline {subsection}{\numberline {8.3}Objevené zajímavé funkce}{14}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Chyby}{15}{section.9}%
-\contentsline {section}{\numberline {10}Popis přiložených souborů}{15}{section.10}%
-\contentsline {section}{\numberline {11}Porovnání s SQL}{15}{section.11}%
-\contentsline {section}{\numberline {12}Na závěr}{16}{section.12}%
+\contentsline {section}{\numberline {1}Knihovna AlaSQL}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Infobox}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Užitečné odkazy}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Stack}{5}{section.2}%
+\contentsline {section}{\numberline {3}Instalace}{5}{section.3}%
+\contentsline {section}{\numberline {4}Použití}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Pomocí funkce}{6}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}NodeJS}{6}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Nová databáze}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Nová tabulka}{6}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Datové typy}{7}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Manipulace dat v tabulce}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Načítání souborů}{8}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Synchronní/Asynchronní přístup}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}HTML}{9}{subsection.5.1}%
+\contentsline {section}{\numberline {6}SQL dotazy}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Nejlépe funguje s JS}{9}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Datasety}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Rohlík.cz}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Starcraft}{10}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Důležitá je cesta, ne cíl}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Rohlík.cz}{11}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Jaké je nejbližší okno s volnou kapacitou?}{11}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Kolik volných časových intervalů je k dispozici?}{12}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Jaké je nejbližší nejlevnější okno s volnou kapacitou?}{12}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Starcraft}{12}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Kolik hráčů je v jednotlivých divizích/úrovních?}{12}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Jsou konzistentní počty hráčů mezi JSON typ A a B?}{12}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Seřazení hráčů v rámci jednoho ladderu.}{13}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Kolik hráčů odehrálo v poslední době nějakou hru?}{15}{subsubsection.8.2.4}%
+\contentsline {subsubsection}{\numberline {8.2.5}Jací hráči jsou v jednom ladderu vícekrát a za jaké rasy?}{15}{subsubsection.8.2.5}%
+\contentsline {subsubsection}{\numberline {8.2.6}Jací hráči přibyli/ubyli v daných ladderech?}{16}{subsubsection.8.2.6}%
+\contentsline {subsubsection}{\numberline {8.2.7}Jací hráči vybočují z hranic divizí?}{16}{subsubsection.8.2.7}%
+\contentsline {subsubsection}{\numberline {8.2.8}Kolik zástupců mají týmy v jednotlivých úrovních?}{17}{subsubsection.8.2.8}%
+\contentsline {subsection}{\numberline {8.3}Objevené zajímavé funkce}{19}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Chyby}{20}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Procházení zanořených objektů}{20}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Nefunkční}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}JOIN}{21}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Popis přiložených souborů}{21}{section.10}%
+\contentsline {section}{\numberline {11}Porovnání s SQL}{22}{section.11}%
+\contentsline {section}{\numberline {12}Na závěr}{22}{section.12}%
